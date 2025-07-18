@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-quick-guides/create-roles" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">How to Create Assistant Role | Wiil Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://trav-nex.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://trav-nex.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://trav-nex.github.io/docs/quick-guides/create-roles"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="How to Create Assistant Role | Wiil Documentation"><meta data-rh="true" name="description" content="Design and configure custom roles that define your assistant&#x27;s behavior, personality, and specific capabilities for unique business scenarios."><meta data-rh="true" property="og:description" content="Design and configure custom roles that define your assistant&#x27;s behavior, personality, and specific capabilities for unique business scenarios."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://trav-nex.github.io/docs/quick-guides/create-roles"><link data-rh="true" rel="alternate" href="https://trav-nex.github.io/docs/quick-guides/create-roles" hreflang="en"><link data-rh="true" rel="alternate" href="https://trav-nex.github.io/docs/quick-guides/create-roles" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Quick Guides","item":"https://trav-nex.github.io/docs/category/quick-guides"},{"@type":"ListItem","position":2,"name":"How to Create Assistant Role","item":"https://trav-nex.github.io/docs/quick-guides/create-roles"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Wiil Documentation RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Wiil Documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.a5122f90.css">
+<script src="/assets/js/runtime~main.6a7be9e7.js" defer="defer"></script>
+<script src="/assets/js/main.13094d36.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="Wiil Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="Wiil Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Wiil Documentation</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Tutorial</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Welcome to Wiil</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/quick-guides">Quick Guides</a><button aria-label="Collapse sidebar category &#x27;Quick Guides&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/quick-guides/overview">Quick Guides Overview</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/quick-guides/create-assistant">3 Major Steps to Create Production Grade Assistant</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/quick-guides/assign-roles">How to Assign Assistant and Role to Communication Channel</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/quick-guides/custom-assistant">How to Create Custom Assistant</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/quick-guides/guided-setup">Guided Assistant Setup</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/quick-guides/create-roles">How to Create Assistant Role</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/category/quick-guides"><span>Quick Guides</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">How to Create Assistant Role</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>How to Create Assistant Role</h1></header>
+<p>Design and configure custom roles that define your assistant&#x27;s behavior, personality, and specific capabilities for unique business scenarios.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>Assistant roles are the foundation of your AI assistant&#x27;s behavior. They define what your assistant can do, how it communicates, what knowledge it can access, and how it handles different situations.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-assistant-roles">Understanding Assistant Roles<a href="#understanding-assistant-roles" class="hash-link" aria-label="Direct link to Understanding Assistant Roles" title="Direct link to Understanding Assistant Roles">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-an-assistant-role">What is an Assistant Role?<a href="#what-is-an-assistant-role" class="hash-link" aria-label="Direct link to What is an Assistant Role?" title="Direct link to What is an Assistant Role?">​</a></h3>
+<p>An assistant role is a comprehensive configuration that includes:</p>
+<ul>
+<li><strong>Behavioral guidelines</strong>: How the assistant should act</li>
+<li><strong>Knowledge access</strong>: What information it can use</li>
+<li><strong>Task permissions</strong>: What actions it can perform</li>
+<li><strong>Communication style</strong>: How it should speak with customers</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="role-vs-assistant-type">Role vs Assistant Type<a href="#role-vs-assistant-type" class="hash-link" aria-label="Direct link to Role vs Assistant Type" title="Direct link to Role vs Assistant Type">​</a></h3>
+<ul>
+<li><strong>Assistant Type</strong>: The underlying AI model and capabilities (Voice, Chat, etc.)</li>
+<li><strong>Assistant Role</strong>: The specific instructions and personality for that assistant</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="complete-role-creation-process">Complete Role Creation Process<a href="#complete-role-creation-process" class="hash-link" aria-label="Direct link to Complete Role Creation Process" title="Direct link to Complete Role Creation Process">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-start-role-creation">Step 1: Start Role Creation<a href="#step-1-start-role-creation" class="hash-link" aria-label="Direct link to Step 1: Start Role Creation" title="Direct link to Step 1: Start Role Creation">​</a></h3>
+<p>Click <strong>&#x27;+ Create a Role&#x27;</strong> to begin the process of creating a new custom assistant role tailored to your specific requirements.</p>
+<p><strong>Before starting:</strong></p>
+<ul>
+<li>Define the role&#x27;s primary purpose</li>
+<li>Identify key tasks and responsibilities</li>
+<li>Consider your brand voice and values</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-choose-template-or-start-fresh">Step 2: Choose Template or Start Fresh<a href="#step-2-choose-template-or-start-fresh" class="hash-link" aria-label="Direct link to Step 2: Choose Template or Start Fresh" title="Direct link to Step 2: Choose Template or Start Fresh">​</a></h3>
+<p>Select either a system template that provides a pre-configured foundation or start from scratch to build a completely custom role.</p>
+<p><strong>Template options:</strong></p>
+<ul>
+<li><strong>Customer Service Representative</strong>: Handle inquiries and resolve issues</li>
+<li><strong>Sales Agent</strong>: Qualify leads and drive conversions</li>
+<li><strong>Technical Support</strong>: Provide technical assistance and troubleshooting</li>
+<li><strong>Receptionist</strong>: Manage appointments and route calls</li>
+<li><strong>Custom Build</strong>: Complete flexibility for unique requirements</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-customize-role-basics">Step 3: Customize Role Basics<a href="#step-3-customize-role-basics" class="hash-link" aria-label="Direct link to Step 3: Customize Role Basics" title="Direct link to Step 3: Customize Role Basics">​</a></h3>
+<p>Customize the role by following the on-screen prompts. Write an introduction message and add any required skills that define the assistant&#x27;s capabilities.</p>
+<p><strong>Introduction message guidelines:</strong></p>
+<ul>
+<li>Keep it concise and welcoming</li>
+<li>Clearly state the assistant&#x27;s purpose</li>
+<li>Set appropriate expectations</li>
+<li>Include your brand personality</li>
+</ul>
+<p><strong>Example introduction:</strong></p>
+<blockquote>
+<p>&quot;Hi! I&#x27;m Sarah, your virtual customer service assistant. I&#x27;m here to help you with your account questions, billing inquiries, and general support. How can I assist you today?&quot;</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-continue-setup">Step 4: Continue Setup<a href="#step-4-continue-setup" class="hash-link" aria-label="Direct link to Step 4: Continue Setup" title="Direct link to Step 4: Continue Setup">​</a></h3>
+<p>Click <strong>&#x27;Next&#x27;</strong> to continue to the next step of the role configuration process.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-define-task-guidelines">Step 5: Define Task Guidelines<a href="#step-5-define-task-guidelines" class="hash-link" aria-label="Direct link to Step 5: Define Task Guidelines" title="Direct link to Step 5: Define Task Guidelines">​</a></h3>
+<p>Specify in detail what the assistant should and should not do while performing its tasks. This defines the boundaries and expectations for the role.</p>
+<p><strong>Guidelines to include:</strong></p>
+<p><strong>What the assistant SHOULD do:</strong></p>
+<ul>
+<li>Provide accurate information based on knowledge base</li>
+<li>Maintain professional and friendly tone</li>
+<li>Ask clarifying questions when needed</li>
+<li>Escalate complex issues to human agents</li>
+<li>Follow company policies and procedures</li>
+</ul>
+<p><strong>What the assistant SHOULD NOT do:</strong></p>
+<ul>
+<li>Make promises beyond its authority</li>
+<li>Share confidential customer information</li>
+<li>Provide medical, legal, or financial advice</li>
+<li>Process payments without verification</li>
+<li>Override company policies</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-6-proceed-to-final-setup">Step 6: Proceed to Final Setup<a href="#step-6-proceed-to-final-setup" class="hash-link" aria-label="Direct link to Step 6: Proceed to Final Setup" title="Direct link to Step 6: Proceed to Final Setup">​</a></h3>
+<p>Click <strong>&#x27;Next&#x27;</strong> again to reach the final setup step where you&#x27;ll configure knowledge sources and access permissions.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-7-choose-knowledge-sources">Step 7: Choose Knowledge Sources<a href="#step-7-choose-knowledge-sources" class="hash-link" aria-label="Direct link to Step 7: Choose Knowledge Sources" title="Direct link to Step 7: Choose Knowledge Sources">​</a></h3>
+<p>Choose knowledge sources to fine-tune the assistant&#x27;s behavior and guidelines. This helps the assistant provide more accurate and relevant responses.</p>
+<p><strong>Available knowledge sources:</strong></p>
+<ul>
+<li><strong>Company FAQ</strong>: Frequently asked questions and answers</li>
+<li><strong>Product Documentation</strong>: Technical specifications and guides</li>
+<li><strong>Policy Documents</strong>: Company policies and procedures</li>
+<li><strong>Training Materials</strong>: Customer service scripts and examples</li>
+<li><strong>External APIs</strong>: Real-time data from integrated systems</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-8-set-knowledge-base-access">Step 8: Set Knowledge Base Access<a href="#step-8-set-knowledge-base-access" class="hash-link" aria-label="Direct link to Step 8: Set Knowledge Base Access" title="Direct link to Step 8: Set Knowledge Base Access">​</a></h3>
+<p>Decide which knowledge bases the assistant will be allowed to access. This controls what information the assistant can use to answer questions.</p>
+<p><strong>Access levels:</strong></p>
+<ul>
+<li><strong>Full Access</strong>: Complete access to all information</li>
+<li><strong>Limited Access</strong>: Specific sections or categories only</li>
+<li><strong>Read-Only</strong>: Can view but not modify information</li>
+<li><strong>Conditional Access</strong>: Access based on conversation context</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-9-create-role">Step 9: Create Role<a href="#step-9-create-role" class="hash-link" aria-label="Direct link to Step 9: Create Role" title="Direct link to Step 9: Create Role">​</a></h3>
+<p>Review all settings to ensure everything is configured correctly, then click <strong>&#x27;Create Role&#x27;</strong> to finish and save your custom assistant role.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="interactive-demo">Interactive Demo<a href="#interactive-demo" class="hash-link" aria-label="Direct link to Interactive Demo" title="Direct link to Interactive Demo">​</a></h2>
+<iframe src="https://app.supademo.com/embed/cmd7qnvk67603c4kjz3keqakq?embed_v=2" loading="lazy" title="3 Major Steps to Create a Professional AI Assistant for Your Business" allow="clipboard-write" width="100%" height="600" style="border:0"></iframe>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-role-configuration">Advanced Role Configuration<a href="#advanced-role-configuration" class="hash-link" aria-label="Direct link to Advanced Role Configuration" title="Direct link to Advanced Role Configuration">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="personality-settings">Personality Settings<a href="#personality-settings" class="hash-link" aria-label="Direct link to Personality Settings" title="Direct link to Personality Settings">​</a></h3>
+<p>Define how your assistant communicates:</p>
+<p><strong>Communication style:</strong></p>
+<ul>
+<li><strong>Formal</strong>: Professional, business-appropriate language</li>
+<li><strong>Casual</strong>: Friendly, conversational tone</li>
+<li><strong>Empathetic</strong>: Understanding, supportive responses</li>
+<li><strong>Enthusiastic</strong>: Energetic, positive interactions</li>
+</ul>
+<p><strong>Response patterns:</strong></p>
+<ul>
+<li><strong>Concise</strong>: Brief, to-the-point answers</li>
+<li><strong>Detailed</strong>: Comprehensive explanations</li>
+<li><strong>Interactive</strong>: Asks follow-up questions</li>
+<li><strong>Directive</strong>: Guides customers through processes</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="workflow-configuration">Workflow Configuration<a href="#workflow-configuration" class="hash-link" aria-label="Direct link to Workflow Configuration" title="Direct link to Workflow Configuration">​</a></h3>
+<p>Set up complex interaction patterns:</p>
+<p><strong>Escalation rules:</strong></p>
+<ul>
+<li>When to transfer to human agents</li>
+<li>Which issues require immediate escalation</li>
+<li>How to handle emergency situations</li>
+</ul>
+<p><strong>Context handling:</strong></p>
+<ul>
+<li>How much conversation history to remember</li>
+<li>When to ask for clarification</li>
+<li>How to handle topic changes</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="integration-settings">Integration Settings<a href="#integration-settings" class="hash-link" aria-label="Direct link to Integration Settings" title="Direct link to Integration Settings">​</a></h3>
+<p>Connect with external systems:</p>
+<p><strong>CRM integration:</strong></p>
+<ul>
+<li>Customer data access</li>
+<li>Interaction logging</li>
+<li>Lead qualification</li>
+</ul>
+<p><strong>Ticketing systems:</strong></p>
+<ul>
+<li>Issue creation and tracking</li>
+<li>Status updates</li>
+<li>Resolution documentation</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="role-testing-and-validation">Role Testing and Validation<a href="#role-testing-and-validation" class="hash-link" aria-label="Direct link to Role Testing and Validation" title="Direct link to Role Testing and Validation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="testing-framework">Testing Framework<a href="#testing-framework" class="hash-link" aria-label="Direct link to Testing Framework" title="Direct link to Testing Framework">​</a></h3>
+<p>Before deploying your role:</p>
+<ol>
+<li><strong>Scenario testing</strong>: Test with realistic customer scenarios</li>
+<li><strong>Edge case validation</strong>: Handle unusual or difficult situations</li>
+<li><strong>Knowledge accuracy</strong>: Verify information provided is correct</li>
+<li><strong>Escalation testing</strong>: Ensure smooth handoffs to humans</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="performance-metrics">Performance Metrics<a href="#performance-metrics" class="hash-link" aria-label="Direct link to Performance Metrics" title="Direct link to Performance Metrics">​</a></h3>
+<p>Track role effectiveness:</p>
+<table><thead><tr><th>Metric</th><th>Description</th><th>Target</th></tr></thead><tbody><tr><td>Resolution Rate</td><td>% of issues resolved without escalation</td><td>&gt;80%</td></tr><tr><td>Response Accuracy</td><td>% of correct information provided</td><td>&gt;95%</td></tr><tr><td>Customer Satisfaction</td><td>Average rating from interactions</td><td>&gt;4.5/5</td></tr><tr><td>Conversation Length</td><td>Average interaction duration</td><td>2-5 minutes</td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="role-design-principles">Role Design Principles<a href="#role-design-principles" class="hash-link" aria-label="Direct link to Role Design Principles" title="Direct link to Role Design Principles">​</a></h3>
+<ol>
+<li><strong>Clarity</strong>: Make instructions clear and unambiguous</li>
+<li><strong>Consistency</strong>: Ensure uniform behavior across interactions</li>
+<li><strong>Flexibility</strong>: Allow for various customer communication styles</li>
+<li><strong>Brand alignment</strong>: Reflect company values and personality</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="knowledge-management">Knowledge Management<a href="#knowledge-management" class="hash-link" aria-label="Direct link to Knowledge Management" title="Direct link to Knowledge Management">​</a></h3>
+<ol>
+<li><strong>Regular updates</strong>: Keep information current and accurate</li>
+<li><strong>Source verification</strong>: Ensure knowledge sources are reliable</li>
+<li><strong>Access control</strong>: Limit sensitive information appropriately</li>
+<li><strong>Version control</strong>: Track changes and updates</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="continuous-improvement">Continuous Improvement<a href="#continuous-improvement" class="hash-link" aria-label="Direct link to Continuous Improvement" title="Direct link to Continuous Improvement">​</a></h3>
+<ol>
+<li><strong>Regular review</strong>: Analyze role performance monthly</li>
+<li><strong>User feedback</strong>: Collect and act on customer input</li>
+<li><strong>Training updates</strong>: Refine based on new scenarios</li>
+<li><strong>A/B testing</strong>: Compare different role configurations</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="troubleshooting-role-issues">Troubleshooting Role Issues<a href="#troubleshooting-role-issues" class="hash-link" aria-label="Direct link to Troubleshooting Role Issues" title="Direct link to Troubleshooting Role Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-problems">Common Problems<a href="#common-problems" class="hash-link" aria-label="Direct link to Common Problems" title="Direct link to Common Problems">​</a></h3>
+<p><strong>Assistant providing incorrect information:</strong></p>
+<ul>
+<li>Review knowledge source accuracy</li>
+<li>Check access permissions</li>
+<li>Verify role guidelines</li>
+</ul>
+<p><strong>Inconsistent behavior:</strong></p>
+<ul>
+<li>Clarify role instructions</li>
+<li>Remove conflicting guidelines</li>
+<li>Test with standard scenarios</li>
+</ul>
+<p><strong>Poor customer satisfaction:</strong></p>
+<ul>
+<li>Review communication style settings</li>
+<li>Adjust personality parameters</li>
+<li>Enhance empathy training</li>
+</ul>
+<p><strong>Excessive escalations:</strong></p>
+<ul>
+<li>Expand knowledge base coverage</li>
+<li>Improve problem-solving capabilities</li>
+<li>Refine escalation criteria</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="role-templates-library">Role Templates Library<a href="#role-templates-library" class="hash-link" aria-label="Direct link to Role Templates Library" title="Direct link to Role Templates Library">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="customer-service-role">Customer Service Role<a href="#customer-service-role" class="hash-link" aria-label="Direct link to Customer Service Role" title="Direct link to Customer Service Role">​</a></h3></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/quick-guides/guided-setup"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Guided Assistant Setup</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a></li><li><a href="#understanding-assistant-roles" class="table-of-contents__link toc-highlight">Understanding Assistant Roles</a><ul><li><a href="#what-is-an-assistant-role" class="table-of-contents__link toc-highlight">What is an Assistant Role?</a></li><li><a href="#role-vs-assistant-type" class="table-of-contents__link toc-highlight">Role vs Assistant Type</a></li></ul></li><li><a href="#complete-role-creation-process" class="table-of-contents__link toc-highlight">Complete Role Creation Process</a><ul><li><a href="#step-1-start-role-creation" class="table-of-contents__link toc-highlight">Step 1: Start Role Creation</a></li><li><a href="#step-2-choose-template-or-start-fresh" class="table-of-contents__link toc-highlight">Step 2: Choose Template or Start Fresh</a></li><li><a href="#step-3-customize-role-basics" class="table-of-contents__link toc-highlight">Step 3: Customize Role Basics</a></li><li><a href="#step-4-continue-setup" class="table-of-contents__link toc-highlight">Step 4: Continue Setup</a></li><li><a href="#step-5-define-task-guidelines" class="table-of-contents__link toc-highlight">Step 5: Define Task Guidelines</a></li><li><a href="#step-6-proceed-to-final-setup" class="table-of-contents__link toc-highlight">Step 6: Proceed to Final Setup</a></li><li><a href="#step-7-choose-knowledge-sources" class="table-of-contents__link toc-highlight">Step 7: Choose Knowledge Sources</a></li><li><a href="#step-8-set-knowledge-base-access" class="table-of-contents__link toc-highlight">Step 8: Set Knowledge Base Access</a></li><li><a href="#step-9-create-role" class="table-of-contents__link toc-highlight">Step 9: Create Role</a></li></ul></li><li><a href="#interactive-demo" class="table-of-contents__link toc-highlight">Interactive Demo</a></li><li><a href="#advanced-role-configuration" class="table-of-contents__link toc-highlight">Advanced Role Configuration</a><ul><li><a href="#personality-settings" class="table-of-contents__link toc-highlight">Personality Settings</a></li><li><a href="#workflow-configuration" class="table-of-contents__link toc-highlight">Workflow Configuration</a></li><li><a href="#integration-settings" class="table-of-contents__link toc-highlight">Integration Settings</a></li></ul></li><li><a href="#role-testing-and-validation" class="table-of-contents__link toc-highlight">Role Testing and Validation</a><ul><li><a href="#testing-framework" class="table-of-contents__link toc-highlight">Testing Framework</a></li><li><a href="#performance-metrics" class="table-of-contents__link toc-highlight">Performance Metrics</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#role-design-principles" class="table-of-contents__link toc-highlight">Role Design Principles</a></li><li><a href="#knowledge-management" class="table-of-contents__link toc-highlight">Knowledge Management</a></li><li><a href="#continuous-improvement" class="table-of-contents__link toc-highlight">Continuous Improvement</a></li></ul></li><li><a href="#troubleshooting-role-issues" class="table-of-contents__link toc-highlight">Troubleshooting Role Issues</a><ul><li><a href="#common-problems" class="table-of-contents__link toc-highlight">Common Problems</a></li></ul></li><li><a href="#role-templates-library" class="table-of-contents__link toc-highlight">Role Templates Library</a><ul><li><a href="#customer-service-role" class="table-of-contents__link toc-highlight">Customer Service Role</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Travnex. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
