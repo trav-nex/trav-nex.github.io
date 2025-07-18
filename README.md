@@ -1,41 +1,50 @@
-# Website
+# Wiil Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Official documentation for **Wiil** - Build intelligent AI assistants for voice and chat conversations. Deploy across multiple channels in minutes, no coding required.
 
-## Installation
+**📖 [View Documentation →](https://travnex.github.io/docs/intro)**
 
-```bash
-yarn
-```
+## What is Wiil?
 
-## Local Development
+Wiil enables businesses to create AI assistants that handle:
+- **Sales**: Lead qualification and demo booking
+- **Support**: Customer service and issue resolution  
+- **Operations**: Appointment scheduling and order processing
+- **HR**: Candidate screening and employee onboarding
 
-```bash
-yarn start
-```
+## Documentation Sections
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### 🚀 [Quick Start Guides](https://travnex.github.io/docs/category/quick-guides)
+Interactive step-by-step tutorials to get you started:
+- Create your first AI assistant in 3 steps
+- Configure assistant roles and behaviors
+- Deploy across voice, chat, SMS, and social channels
+- Test and optimize your assistant
 
-## Build
+### 🔧 API Reference *(Coming Soon)*
+Complete developer documentation for integrating Wiil:
+- REST API endpoints and examples
+- Authentication and security
+- SDKs for popular programming languages
+- Webhook configuration guides
 
-```bash
-yarn build
-```
+### 💡 Use Cases & Examples
+Real-world applications and implementation guides:
+- Automating customer support workflows
+- Setting up sales qualification processes
+- Building appointment booking systems
+- Creating HR screening assistants
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Getting Help
 
-## Deployment
+- **Platform Support**: [wiil.io/support](https://wiil.io/support)
+- **Documentation Issues**: [Submit an issue](https://github.com/travnex/docs/issues)
+- **Community**: [Join discussions](https://github.com/travnex/docs/discussions)
 
-Using SSH:
+## About
 
-```bash
-USE_SSH=true yarn deploy
-```
+This documentation is built with [Docusaurus](https://docusaurus.io/) and includes interactive demos to help you learn the platform effectively.
 
-Not using SSH:
+---
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+**[Start Building Your AI Assistant →](https://travnex.github.io/docs/category/quick-guides)**

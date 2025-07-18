@@ -14,7 +14,7 @@ Or **try Wiil immediately** with our **[interactive guides](/quick-guides)**.
 
 ### What you'll need
 
-- A Wiil account - [Sign up for free](https://wiil.io)
+- A Wiil account - [Sign up for free](https://console.wiil.io)
 - Basic understanding of your business requirements:
   - What tasks should your assistant handle?
   - Which channels will customers use to contact you?
