@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-web-integration/troubleshooting" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Troubleshooting Common Issues | Wiil Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://trav-nex.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://trav-nex.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://trav-nex.github.io/docs/web-integration/troubleshooting"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Troubleshooting Common Issues | Wiil Documentation"><meta data-rh="true" name="description" content="Comprehensive guide to identifying and resolving common website integration problems with your AI assistant widget."><meta data-rh="true" property="og:description" content="Comprehensive guide to identifying and resolving common website integration problems with your AI assistant widget."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://trav-nex.github.io/docs/web-integration/troubleshooting"><link data-rh="true" rel="alternate" href="https://trav-nex.github.io/docs/web-integration/troubleshooting" hreflang="en"><link data-rh="true" rel="alternate" href="https://trav-nex.github.io/docs/web-integration/troubleshooting" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Web Integration","item":"https://trav-nex.github.io/docs/category/web-integration"},{"@type":"ListItem","position":2,"name":"Troubleshooting Common Issues","item":"https://trav-nex.github.io/docs/web-integration/troubleshooting"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Wiil Documentation RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Wiil Documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.5c68aa20.css">
+<script src="/assets/js/runtime~main.a1b3e8bb.js" defer="defer"></script>
+<script src="/assets/js/main.8c8ca28c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="Wiil Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="Wiil Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Wiil Documentation</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Tutorial</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Welcome to Wiil</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/quick-guides">Quick Guides</a><button aria-label="Expand sidebar category &#x27;Quick Guides&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/assistants">Assistants</a><button aria-label="Expand sidebar category &#x27;Assistants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/assistant-roles">Assistant Roles</a><button aria-label="Expand sidebar category &#x27;Assistant Roles&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/web-integration">Web Integration</a><button aria-label="Collapse sidebar category &#x27;Web Integration&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/web-integration/website-integration-overview">How to Integrate Assistant to Your Website</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/web-integration/platform-implementation">Web Implementation Guide</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/web-integration/troubleshooting">Troubleshooting Common Issues</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/phone-integration">Phone Integration</a><button aria-label="Expand sidebar category &#x27;Phone Integration&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/category/web-integration"><span>Web Integration</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Troubleshooting Common Issues</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Troubleshooting Common Issues</h1></header>
+<p>Comprehensive guide to identifying and resolving common website integration problems with your AI assistant widget.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="before-you-start-troubleshooting">Before You Start Troubleshooting<a href="#before-you-start-troubleshooting" class="hash-link" aria-label="Direct link to Before You Start Troubleshooting" title="Direct link to Before You Start Troubleshooting">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="essential-prerequisites-checklist">Essential Prerequisites Checklist<a href="#essential-prerequisites-checklist" class="hash-link" aria-label="Direct link to Essential Prerequisites Checklist" title="Direct link to Essential Prerequisites Checklist">​</a></h3>
+<p><strong>⚠️ Verify these requirements before troubleshooting technical issues:</strong></p>
+<ol>
+<li>
+<p><strong>✅ Assistant Configuration:</strong></p>
+<ul>
+<li>Assistant is created and properly configured</li>
+<li>Test assistant works in dashboard interface</li>
+</ul>
+</li>
+<li>
+<p><strong>✅ Role Assignment:</strong></p>
+<ul>
+<li>Assistant has roles assigned</li>
+<li>Roles have appropriate permissions</li>
+<li>Roles are connected to knowledge sources</li>
+</ul>
+</li>
+<li>
+<p><strong>✅ Website Channel Setup:</strong></p>
+<ul>
+<li>Website channel is created and active</li>
+<li>Correct website URL is configured</li>
+<li>Generated code is copied exactly as provided</li>
+</ul>
+</li>
+</ol>
+<p><strong>Important:</strong> Most integration issues stem from incomplete assistant setup, not technical implementation problems.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="widget-not-appearing-issues">Widget Not Appearing Issues<a href="#widget-not-appearing-issues" class="hash-link" aria-label="Direct link to Widget Not Appearing Issues" title="Direct link to Widget Not Appearing Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-widget-doesnt-show-on-website">Issue: Widget Doesn&#x27;t Show on Website<a href="#issue-widget-doesnt-show-on-website" class="hash-link" aria-label="Direct link to Issue: Widget Doesn&#x27;t Show on Website" title="Direct link to Issue: Widget Doesn&#x27;t Show on Website">​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>No chat widget visible on your website</li>
+<li>Page loads normally but assistant is missing</li>
+<li>No errors visible to website visitors</li>
+</ul>
+<p><strong>Diagnostic Steps:</strong></p>
+<ol>
+<li>
+<p><strong>Check Browser Console:</strong></p>
+<ul>
+<li>Press F12 to open developer tools</li>
+<li>Look for JavaScript errors in Console tab</li>
+<li>Note any error messages related to &quot;wiil&quot; or &quot;widget&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>Verify Code Placement:</strong></p>
+<ul>
+<li>Ensure widget code is placed before closing body tag</li>
+<li>Check that both div element and script tags are included</li>
+<li>Confirm no missing quotation marks or brackets</li>
+</ul>
+</li>
+<li>
+<p><strong>Validate Website URL:</strong></p>
+<ul>
+<li>Ensure URL in dashboard exactly matches your live site</li>
+<li>Include or exclude &quot;www&quot; as it appears in browser</li>
+<li>Verify protocol (http vs https) matches</li>
+</ul>
+</li>
+</ol>
+<p><strong>Solutions:</strong></p>
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic">&lt;!-- Correct implementation --&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">div</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">id</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">your-unique-widget-id</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-config-id</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">YOUR_CONFIG_ID</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-primary-color</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">#ff6b35</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-agent-name</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Customer Support</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-features</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">chat,voice</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-prompt-message</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Need help? We&#x27;re here to assist!</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f"></span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">div</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">script</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">src</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">https://cdn.wiil.io/public/wiil-widget.js</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token script"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">script</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">script</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token script language-javascript maybe-class-name">WiilWidget</span><span class="token script language-javascript punctuation" style="color:#393A34">.</span><span class="token script language-javascript method function property-access" style="color:#d73a49">init</span><span class="token script language-javascript punctuation" style="color:#393A34">(</span><span class="token script language-javascript punctuation" style="color:#393A34">)</span><span class="token script language-javascript punctuation" style="color:#393A34">;</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">script</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<p><strong>Common Fixes:</strong></p>
+<ul>
+<li>Move code to footer template for site-wide appearance</li>
+<li>Clear browser cache and refresh page</li>
+<li>Test in incognito/private browsing mode</li>
+<li>Verify no ad blockers are interfering</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-widget-appears-but-looks-broken">Issue: Widget Appears But Looks Broken<a href="#issue-widget-appears-but-looks-broken" class="hash-link" aria-label="Direct link to Issue: Widget Appears But Looks Broken" title="Direct link to Issue: Widget Appears But Looks Broken">​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Widget shows but appears distorted</li>
+<li>Styling conflicts with website design</li>
+<li>Widget overlaps with other elements</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p><strong>CSS Conflicts:</strong></p>
+<ul>
+<li>Check for CSS rules affecting widget container</li>
+<li>Ensure widget has sufficient z-index</li>
+<li>Verify no conflicting position styles</li>
+</ul>
+</li>
+<li>
+<p><strong>Theme Compatibility:</strong></p>
+<ul>
+<li>Test with default theme if using WordPress</li>
+<li>Disable other plugins temporarily to identify conflicts</li>
+<li>Check theme&#x27;s CSS for widget interference</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="assistant-not-responding-issues">Assistant Not Responding Issues<a href="#assistant-not-responding-issues" class="hash-link" aria-label="Direct link to Assistant Not Responding Issues" title="Direct link to Assistant Not Responding Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-widget-opens-but-assistant-doesnt-respond">Issue: Widget Opens But Assistant Doesn&#x27;t Respond<a href="#issue-widget-opens-but-assistant-doesnt-respond" class="hash-link" aria-label="Direct link to Issue: Widget Opens But Assistant Doesn&#x27;t Respond" title="Direct link to Issue: Widget Opens But Assistant Doesn&#x27;t Respond">​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Chat interface opens successfully</li>
+<li>Messages can be typed but no responses</li>
+<li>Loading indicator may show indefinitely</li>
+</ul>
+<p><strong>Primary Cause Check:</strong></p>
+<ol>
+<li>
+<p><strong>Assistant Configuration Status:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Dashboard → My Assistants → [Your Assistant]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Check: Roles are assigned</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Check: Knowledge sources are connected</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Test Assistant Separately:</strong></p>
+<ul>
+<li>Go to assistant dashboard</li>
+<li>Use &quot;Test Assistant&quot; feature</li>
+<li>Verify responses work in dashboard interface</li>
+<li>If dashboard testing fails, assistant needs configuration</li>
+</ul>
+</li>
+</ol>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p><strong>Complete Assistant Setup:</strong></p>
+<ul>
+<li>Ensure assistant has at least one role assigned</li>
+<li>Verify roles have knowledge sources attached</li>
+<li>Test assistant functionality in dashboard first</li>
+</ul>
+</li>
+<li>
+<p><strong>Role Configuration:</strong></p>
+<ul>
+<li>Check that assigned roles have appropriate permissions</li>
+<li>Verify knowledge sources are processed and active</li>
+<li>Confirm role settings match intended behavior</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-partial-assistant-functionality">Issue: Partial Assistant Functionality<a href="#issue-partial-assistant-functionality" class="hash-link" aria-label="Direct link to Issue: Partial Assistant Functionality" title="Direct link to Issue: Partial Assistant Functionality">​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Some responses work, others don&#x27;t</li>
+<li>Inconsistent behavior across topics</li>
+<li>Assistant seems to &quot;forget&quot; information</li>
+</ul>
+<p><strong>Diagnostic Approach:</strong></p>
+<ol>
+<li>
+<p><strong>Knowledge Source Analysis:</strong></p>
+<ul>
+<li>Check which knowledge sources are assigned to role</li>
+<li>Verify all sources show &quot;Processed&quot; status</li>
+<li>Test specific topics that aren&#x27;t working</li>
+</ul>
+</li>
+<li>
+<p><strong>Role Scope Review:</strong></p>
+<ul>
+<li>Confirm role has access to relevant knowledge</li>
+<li>Check if multiple roles might be conflicting</li>
+<li>Verify role permissions are correctly set</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="voice-features-not-working">Voice Features Not Working<a href="#voice-features-not-working" class="hash-link" aria-label="Direct link to Voice Features Not Working" title="Direct link to Voice Features Not Working">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-voice-chat-unavailable-or-not-functioning">Issue: Voice Chat Unavailable or Not Functioning<a href="#issue-voice-chat-unavailable-or-not-functioning" class="hash-link" aria-label="Direct link to Issue: Voice Chat Unavailable or Not Functioning" title="Direct link to Issue: Voice Chat Unavailable or Not Functioning">​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Voice button doesn&#x27;t appear</li>
+<li>Microphone access denied</li>
+<li>Voice recognition not working</li>
+<li>Audio playback issues</li>
+</ul>
+<p><strong>Browser Requirements Check:</strong></p>
+<ol>
+<li>
+<p><strong>HTTPS Requirement:</strong></p>
+<ul>
+<li>Voice features require HTTPS connection</li>
+<li>Check website URL shows lock icon</li>
+<li>HTTP sites cannot access microphone</li>
+</ul>
+</li>
+<li>
+<p><strong>Browser Compatibility:</strong></p>
+<ul>
+<li>Chrome: Full support</li>
+<li>Firefox: Full support</li>
+<li>Safari: Limited support</li>
+<li>Edge: Full support</li>
+<li>Mobile browsers: Varies by device</li>
+</ul>
+</li>
+</ol>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p><strong>Enable Microphone Permissions:</strong></p>
+<ul>
+<li>Click microphone icon in browser address bar</li>
+<li>Select &quot;Allow&quot; for microphone access</li>
+<li>Refresh page after changing permissions</li>
+</ul>
+</li>
+<li>
+<p><strong>Check Website Security:</strong></p>
+<ul>
+<li>Ensure website uses HTTPS</li>
+<li>Verify SSL certificate is valid</li>
+<li>Test on secure connection</li>
+</ul>
+</li>
+<li>
+<p><strong>Browser Settings:</strong></p>
+<ul>
+<li>Clear browser cache and cookies</li>
+<li>Check browser&#x27;s site permissions</li>
+<li>Test in different browser</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="performance-and-loading-issues">Performance and Loading Issues<a href="#performance-and-loading-issues" class="hash-link" aria-label="Direct link to Performance and Loading Issues" title="Direct link to Performance and Loading Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="issue-widget-loads-slowly-or-causes-page-problems">Issue: Widget Loads Slowly or Causes Page Problems<a href="#issue-widget-loads-slowly-or-causes-page-problems" class="hash-link" aria-label="Direct link to Issue: Widget Loads Slowly or Causes Page Problems" title="Direct link to Issue: Widget Loads Slowly or Causes Page Problems">​</a></h3>
+<p><strong>Symptoms:</strong></p>
+<ul>
+<li>Website takes longer to load with widget</li>
+<li>Page becomes unresponsive</li>
+<li>Widget doesn&#x27;t initialize properly</li>
+</ul>
+<p><strong>Performance Optimization:</strong></p>
+<ol>
+<li>
+<p><strong>Script Loading:</strong></p>
+<ul>
+<li>Ensure script is placed at bottom of page</li>
+<li>Widget loads asynchronously by default</li>
+<li>Check for conflicts with other scripts</li>
+</ul>
+</li>
+<li>
+<p><strong>Network Connectivity:</strong></p>
+<ul>
+<li>Test with different internet connections</li>
+<li>Check if CDN (cdn.wiil.io) is accessible</li>
+<li>Verify no firewall blocking widget scripts</li>
+</ul>
+</li>
+</ol>
+<p><strong>Solutions:</strong></p>
+<ol>
+<li>
+<p><strong>Optimal Code Placement:</strong></p>
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">- Place just before closing body tag</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">script</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">src</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">https://cdn.wiil.io/public/wiil-widget.js</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token script"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">script</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">script</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token script language-javascript maybe-class-name">WiilWidget</span><span class="token script language-javascript punctuation" style="color:#393A34">.</span><span class="token script language-javascript method function property-access" style="color:#d73a49">init</span><span class="token script language-javascript punctuation" style="color:#393A34">(</span><span class="token script language-javascript punctuation" style="color:#393A34">)</span><span class="token script language-javascript punctuation" style="color:#393A34">;</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">script</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p><strong>Conflict Resolution:</strong></p>
+<ul>
+<li>Test with other scripts temporarily disabled</li>
+<li>Check JavaScript console for error messages</li>
+<li>Ensure no duplicate widget implementations</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="platform-specific-issues">Platform-Specific Issues<a href="#platform-specific-issues" class="hash-link" aria-label="Direct link to Platform-Specific Issues" title="Direct link to Platform-Specific Issues">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="wordpress-issues">WordPress Issues<a href="#wordpress-issues" class="hash-link" aria-label="Direct link to WordPress Issues" title="Direct link to WordPress Issues">​</a></h3>
+<p><strong>Common Problems:</strong></p>
+<ul>
+<li>Plugin conflicts preventing widget load</li>
+<li>Theme overriding widget styles</li>
+<li>Caching preventing widget updates</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ul>
+<li>Deactivate plugins to identify conflicts</li>
+<li>Use child theme for custom implementations</li>
+<li>Clear caching plugins after widget installation</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="shopify-issues">Shopify Issues<a href="#shopify-issues" class="hash-link" aria-label="Direct link to Shopify Issues" title="Direct link to Shopify Issues">​</a></h3>
+<p><strong>Common Problems:</strong></p>
+<ul>
+<li>Theme updates removing custom code</li>
+<li>Checkout process conflicts</li>
+<li>Mobile theme differences</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ul>
+<li>Backup theme before modifications</li>
+<li>Use Shopify&#x27;s Script Manager when available</li>
+<li>Test widget on different theme sections</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="e-commerce-specific-issues">E-commerce Specific Issues<a href="#e-commerce-specific-issues" class="hash-link" aria-label="Direct link to E-commerce Specific Issues" title="Direct link to E-commerce Specific Issues">​</a></h3>
+<p><strong>Common Problems:</strong></p>
+<ul>
+<li>Cart/checkout page conflicts</li>
+<li>SSL certificate issues on payment pages</li>
+<li>Mobile responsiveness on product pages</li>
+</ul>
+<p><strong>Solutions:</strong></p>
+<ul>
+<li>Test widget on non-checkout pages first</li>
+<li>Ensure HTTPS throughout entire site</li>
+<li>Check mobile layout across different devices</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="systematic-troubleshooting-process">Systematic Troubleshooting Process<a href="#systematic-troubleshooting-process" class="hash-link" aria-label="Direct link to Systematic Troubleshooting Process" title="Direct link to Systematic Troubleshooting Process">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-verify-prerequisites">Step 1: Verify Prerequisites<a href="#step-1-verify-prerequisites" class="hash-link" aria-label="Direct link to Step 1: Verify Prerequisites" title="Direct link to Step 1: Verify Prerequisites">​</a></h3>
+<ol>
+<li>Assistant is fully configured and tested</li>
+<li>Roles are assigned with knowledge sources</li>
+<li>Website channel is properly created</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-check-implementation">Step 2: Check Implementation<a href="#step-2-check-implementation" class="hash-link" aria-label="Direct link to Step 2: Check Implementation" title="Direct link to Step 2: Check Implementation">​</a></h3>
+<ol>
+<li>Code is copied exactly as generated</li>
+<li>Code placement is correct (before body tag)</li>
+<li>Website URL matches dashboard configuration</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-browser-diagnostics">Step 3: Browser Diagnostics<a href="#step-3-browser-diagnostics" class="hash-link" aria-label="Direct link to Step 3: Browser Diagnostics" title="Direct link to Step 3: Browser Diagnostics">​</a></h3>
+<ol>
+<li>Open browser developer tools (F12)</li>
+<li>Check Console tab for errors</li>
+<li>Test in different browsers and devices</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-test-functionality">Step 4: Test Functionality<a href="#step-4-test-functionality" class="hash-link" aria-label="Direct link to Step 4: Test Functionality" title="Direct link to Step 4: Test Functionality">​</a></h3>
+<ol>
+<li>Text chat features</li>
+<li>Voice features (if enabled)</li>
+<li>Assistant response quality</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-platform-specific-checks">Step 5: Platform-Specific Checks<a href="#step-5-platform-specific-checks" class="hash-link" aria-label="Direct link to Step 5: Platform-Specific Checks" title="Direct link to Step 5: Platform-Specific Checks">​</a></h3>
+<ol>
+<li>Follow platform-specific troubleshooting</li>
+<li>Check for theme/plugin conflicts</li>
+<li>Verify platform requirements</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-additional-help">Getting Additional Help<a href="#getting-additional-help" class="hash-link" aria-label="Direct link to Getting Additional Help" title="Direct link to Getting Additional Help">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="before-contacting-support">Before Contacting Support<a href="#before-contacting-support" class="hash-link" aria-label="Direct link to Before Contacting Support" title="Direct link to Before Contacting Support">​</a></h3>
+<p><strong>Gather This Information:</strong></p>
+<ul>
+<li>Website URL where widget is implemented</li>
+<li>Browser and version where issue occurs</li>
+<li>Specific error messages (if any)</li>
+<li>Screenshots of the problem</li>
+<li>Steps to reproduce the issue</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="support-channels">Support Channels<a href="#support-channels" class="hash-link" aria-label="Direct link to Support Channels" title="Direct link to Support Channels">​</a></h3>
+<p><strong>Technical Support:</strong></p>
+<ul>
+<li>Email: <a href="mailto:support@wiil.io" target="_blank" rel="noopener noreferrer">support@wiil.io</a></li>
+<li>Include: Assistant ID, website URL, and issue description</li>
+</ul>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li>Platform guides: Available in documentation section</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="emergency-situations">Emergency Situations<a href="#emergency-situations" class="hash-link" aria-label="Direct link to Emergency Situations" title="Direct link to Emergency Situations">​</a></h3>
+<p><strong>Critical Issues:</strong></p>
+<ul>
+<li>Widget causing website crashes</li>
+<li>Security concerns</li>
+<li>Urgent production problems</li>
+</ul>
+<p><strong>Contact:</strong> Priority support available for enterprise customers
+<strong>Response Time:</strong> Critical issues addressed within 4 hours</p>
+<hr>
+<p><strong>💡 Pro Tip:</strong> 90% of integration issues are resolved by completing assistant configuration first, then testing the assistant in the dashboard before implementing on the website. Always verify your assistant works independently before troubleshooting website integration.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/web-integration/platform-implementation"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Web Implementation Guide</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/category/phone-integration"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Phone Integration</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#before-you-start-troubleshooting" class="table-of-contents__link toc-highlight">Before You Start Troubleshooting</a><ul><li><a href="#essential-prerequisites-checklist" class="table-of-contents__link toc-highlight">Essential Prerequisites Checklist</a></li></ul></li><li><a href="#widget-not-appearing-issues" class="table-of-contents__link toc-highlight">Widget Not Appearing Issues</a><ul><li><a href="#issue-widget-doesnt-show-on-website" class="table-of-contents__link toc-highlight">Issue: Widget Doesn&#39;t Show on Website</a></li><li><a href="#issue-widget-appears-but-looks-broken" class="table-of-contents__link toc-highlight">Issue: Widget Appears But Looks Broken</a></li></ul></li><li><a href="#assistant-not-responding-issues" class="table-of-contents__link toc-highlight">Assistant Not Responding Issues</a><ul><li><a href="#issue-widget-opens-but-assistant-doesnt-respond" class="table-of-contents__link toc-highlight">Issue: Widget Opens But Assistant Doesn&#39;t Respond</a></li><li><a href="#issue-partial-assistant-functionality" class="table-of-contents__link toc-highlight">Issue: Partial Assistant Functionality</a></li></ul></li><li><a href="#voice-features-not-working" class="table-of-contents__link toc-highlight">Voice Features Not Working</a><ul><li><a href="#issue-voice-chat-unavailable-or-not-functioning" class="table-of-contents__link toc-highlight">Issue: Voice Chat Unavailable or Not Functioning</a></li></ul></li><li><a href="#performance-and-loading-issues" class="table-of-contents__link toc-highlight">Performance and Loading Issues</a><ul><li><a href="#issue-widget-loads-slowly-or-causes-page-problems" class="table-of-contents__link toc-highlight">Issue: Widget Loads Slowly or Causes Page Problems</a></li></ul></li><li><a href="#platform-specific-issues" class="table-of-contents__link toc-highlight">Platform-Specific Issues</a><ul><li><a href="#wordpress-issues" class="table-of-contents__link toc-highlight">WordPress Issues</a></li><li><a href="#shopify-issues" class="table-of-contents__link toc-highlight">Shopify Issues</a></li><li><a href="#e-commerce-specific-issues" class="table-of-contents__link toc-highlight">E-commerce Specific Issues</a></li></ul></li><li><a href="#systematic-troubleshooting-process" class="table-of-contents__link toc-highlight">Systematic Troubleshooting Process</a><ul><li><a href="#step-1-verify-prerequisites" class="table-of-contents__link toc-highlight">Step 1: Verify Prerequisites</a></li><li><a href="#step-2-check-implementation" class="table-of-contents__link toc-highlight">Step 2: Check Implementation</a></li><li><a href="#step-3-browser-diagnostics" class="table-of-contents__link toc-highlight">Step 3: Browser Diagnostics</a></li><li><a href="#step-4-test-functionality" class="table-of-contents__link toc-highlight">Step 4: Test Functionality</a></li><li><a href="#step-5-platform-specific-checks" class="table-of-contents__link toc-highlight">Step 5: Platform-Specific Checks</a></li></ul></li><li><a href="#getting-additional-help" class="table-of-contents__link toc-highlight">Getting Additional Help</a><ul><li><a href="#before-contacting-support" class="table-of-contents__link toc-highlight">Before Contacting Support</a></li><li><a href="#support-channels" class="table-of-contents__link toc-highlight">Support Channels</a></li><li><a href="#emergency-situations" class="table-of-contents__link toc-highlight">Emergency Situations</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Travnex. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

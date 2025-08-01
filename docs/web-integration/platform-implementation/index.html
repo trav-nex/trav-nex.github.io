@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-web-integration/platform-implementation" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Web Implementation Guide | Wiil Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://trav-nex.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://trav-nex.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://trav-nex.github.io/docs/web-integration/platform-implementation"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Web Implementation Guide | Wiil Documentation"><meta data-rh="true" name="description" content="Step-by-step instructions for implementing your AI assistant widget across different website platforms and content management systems."><meta data-rh="true" property="og:description" content="Step-by-step instructions for implementing your AI assistant widget across different website platforms and content management systems."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://trav-nex.github.io/docs/web-integration/platform-implementation"><link data-rh="true" rel="alternate" href="https://trav-nex.github.io/docs/web-integration/platform-implementation" hreflang="en"><link data-rh="true" rel="alternate" href="https://trav-nex.github.io/docs/web-integration/platform-implementation" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Web Integration","item":"https://trav-nex.github.io/docs/category/web-integration"},{"@type":"ListItem","position":2,"name":"Web Implementation Guide","item":"https://trav-nex.github.io/docs/web-integration/platform-implementation"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Wiil Documentation RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Wiil Documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.5c68aa20.css">
+<script src="/assets/js/runtime~main.a1b3e8bb.js" defer="defer"></script>
+<script src="/assets/js/main.8c8ca28c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="Wiil Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="Wiil Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Wiil Documentation</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Tutorial</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Welcome to Wiil</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/quick-guides">Quick Guides</a><button aria-label="Expand sidebar category &#x27;Quick Guides&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/assistants">Assistants</a><button aria-label="Expand sidebar category &#x27;Assistants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/assistant-roles">Assistant Roles</a><button aria-label="Expand sidebar category &#x27;Assistant Roles&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/web-integration">Web Integration</a><button aria-label="Collapse sidebar category &#x27;Web Integration&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/web-integration/website-integration-overview">How to Integrate Assistant to Your Website</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/web-integration/platform-implementation">Web Implementation Guide</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/web-integration/troubleshooting">Troubleshooting Common Issues</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/phone-integration">Phone Integration</a><button aria-label="Expand sidebar category &#x27;Phone Integration&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/category/web-integration"><span>Web Integration</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Web Implementation Guide</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Web Implementation Guide</h1></header>
+<p>Step-by-step instructions for implementing your AI assistant widget across different website platforms and content management systems.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-the-widget-code">Understanding the Widget Code<a href="#understanding-the-widget-code" class="hash-link" aria-label="Direct link to Understanding the Widget Code" title="Direct link to Understanding the Widget Code">​</a></h2>
+<p>Your generated widget code consists of two main components that work together:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="widget-container">Widget Container<a href="#widget-container" class="hash-link" aria-label="Direct link to Widget Container" title="Direct link to Widget Container">​</a></h3>
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">div</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">id</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">your-unique-widget-id</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-config-id</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">YOUR_CONFIG_ID</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-primary-color</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">#ff6b35</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-agent-name</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Customer Support</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-features</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">chat,voice</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-prompt-message</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Need help? We&#x27;re here to assist!</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f"></span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">div</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="widget-script">Widget Script<a href="#widget-script" class="hash-link" aria-label="Direct link to Widget Script" title="Direct link to Widget Script">​</a></h3>
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">script</span><span class="token tag" style="color:#00009f"> </span><span class="token tag attr-name" style="color:#00a4db">src</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">https://cdn.wiil.io/public/wiil-widget.js</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token script"></span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">script</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">script</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token script language-javascript maybe-class-name">WiilWidget</span><span class="token script language-javascript punctuation" style="color:#393A34">.</span><span class="token script language-javascript method function property-access" style="color:#d73a49">init</span><span class="token script language-javascript punctuation" style="color:#393A34">(</span><span class="token script language-javascript punctuation" style="color:#393A34">)</span><span class="token script language-javascript punctuation" style="color:#393A34">;</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">script</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<p><strong>Important:</strong> Always copy and paste your exact generated code. The placeholders shown above are for reference only.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="website-builders-implementation">Website Builders Implementation<a href="#website-builders-implementation" class="hash-link" aria-label="Direct link to Website Builders Implementation" title="Direct link to Website Builders Implementation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="wordpress">WordPress<a href="#wordpress" class="hash-link" aria-label="Direct link to WordPress" title="Direct link to WordPress">​</a></h3>
+<p><strong>Method 1: Theme Footer (Recommended)</strong></p>
+<ol>
+<li>Go to <strong>Appearance</strong> → <strong>Theme Editor</strong></li>
+<li>Select <strong>footer.php</strong> from the file list</li>
+<li>Paste your widget code before the closing body tag</li>
+<li>Click <strong>Update File</strong></li>
+</ol>
+<p><strong>Method 2: Custom HTML Widget</strong></p>
+<ol>
+<li>Go to <strong>Appearance</strong> → <strong>Widgets</strong></li>
+<li>Add a <strong>Custom HTML</strong> widget to your desired location</li>
+<li>Paste your complete widget code</li>
+<li>Save the widget</li>
+</ol>
+<p><strong>Method 3: Plugin (Alternative)</strong></p>
+<ol>
+<li>Install a &quot;Header and Footer Scripts&quot; plugin</li>
+<li>Go to plugin settings</li>
+<li>Paste your widget code in the &quot;Footer Scripts&quot; section</li>
+<li>Save settings</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="wix">Wix<a href="#wix" class="hash-link" aria-label="Direct link to Wix" title="Direct link to Wix">​</a></h3>
+<p><strong>Using Custom Code:</strong></p>
+<ol>
+<li>Go to <strong>Settings</strong> → <strong>Custom Code</strong></li>
+<li>Click <strong>+ Add Custom Code</strong></li>
+<li>Paste your widget code</li>
+<li>Set <strong>Load code on:</strong> &quot;All Pages&quot; or specific pages</li>
+<li>Choose <strong>Place code in:</strong> &quot;Body - end&quot;</li>
+<li>Click <strong>Apply</strong></li>
+</ol>
+<p><strong>Using HTML Embed:</strong></p>
+<ol>
+<li>Click <strong>Add Elements</strong> → <strong>Embed</strong> → <strong>Custom Embeds</strong></li>
+<li>Select <strong>HTML Embed</strong></li>
+<li>Click <strong>Enter Code</strong></li>
+<li>Paste your complete widget code</li>
+<li>Position the embed element where desired</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="squarespace">Squarespace<a href="#squarespace" class="hash-link" aria-label="Direct link to Squarespace" title="Direct link to Squarespace">​</a></h3>
+<p><strong>Code Injection Method:</strong></p>
+<ol>
+<li>Go to <strong>Settings</strong> → <strong>Advanced</strong> → <strong>Code Injection</strong></li>
+<li>Paste your widget code in the <strong>Footer</strong> section</li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<p><strong>Code Block Method:</strong></p>
+<ol>
+<li>Edit the page where you want the widget</li>
+<li>Add a <strong>Code Block</strong></li>
+<li>Paste your widget code</li>
+<li>Save and publish</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="webflow">Webflow<a href="#webflow" class="hash-link" aria-label="Direct link to Webflow" title="Direct link to Webflow">​</a></h3>
+<p><strong>Project-Wide Implementation:</strong></p>
+<ol>
+<li>Go to <strong>Project Settings</strong> → <strong>Custom Code</strong></li>
+<li>Paste your widget code in <strong>Footer Code</strong></li>
+<li>Click <strong>Save Changes</strong> and publish</li>
+</ol>
+<p><strong>Page-Specific Implementation:</strong></p>
+<ol>
+<li>Open the page in the Designer</li>
+<li>Go to <strong>Page Settings</strong> → <strong>Custom Code</strong></li>
+<li>Paste your widget code in <strong>Before body end tag</strong></li>
+<li>Save and publish</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="e-commerce-platforms">E-commerce Platforms<a href="#e-commerce-platforms" class="hash-link" aria-label="Direct link to E-commerce Platforms" title="Direct link to E-commerce Platforms">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="shopify">Shopify<a href="#shopify" class="hash-link" aria-label="Direct link to Shopify" title="Direct link to Shopify">​</a></h3>
+<p><strong>Theme Files Method:</strong></p>
+<ol>
+<li>Go to <strong>Online Store</strong> → <strong>Themes</strong></li>
+<li>Click <strong>Actions</strong> → <strong>Edit Code</strong></li>
+<li>Open <strong>Layout/theme.liquid</strong></li>
+<li>Paste your widget code before <code>&lt;/body&gt;</code></li>
+<li>Click <strong>Save</strong></li>
+</ol>
+<p><strong>Alternative - Checkout Settings:</strong></p>
+<ol>
+<li>Go to <strong>Settings</strong> → <strong>Checkout</strong></li>
+<li>Scroll to <strong>Order Status Page</strong></li>
+<li>Paste widget code in <strong>Additional Scripts</strong></li>
+<li>Save settings</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bigcommerce">BigCommerce<a href="#bigcommerce" class="hash-link" aria-label="Direct link to BigCommerce" title="Direct link to BigCommerce">​</a></h3>
+<p><strong>Script Manager:</strong></p>
+<ol>
+<li>Go to <strong>Storefront</strong> → <strong>Script Manager</strong></li>
+<li>Click <strong>Create a Script</strong></li>
+<li>Set <strong>Location</strong> to &quot;Footer&quot;</li>
+<li>Set <strong>Pages</strong> to &quot;All Pages&quot; or specific pages</li>
+<li>Paste your widget code in the script content</li>
+<li>Save script</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="woocommerce-wordpress">WooCommerce (WordPress)<a href="#woocommerce-wordpress" class="hash-link" aria-label="Direct link to WooCommerce (WordPress)" title="Direct link to WooCommerce (WordPress)">​</a></h3>
+<p>Follow the WordPress implementation methods above, as WooCommerce runs on WordPress.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="no-code-development-platforms">No-Code Development Platforms<a href="#no-code-development-platforms" class="hash-link" aria-label="Direct link to No-Code Development Platforms" title="Direct link to No-Code Development Platforms">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lovable">Lovable<a href="#lovable" class="hash-link" aria-label="Direct link to Lovable" title="Direct link to Lovable">​</a></h3>
+<p><strong>Custom Code Section:</strong></p>
+<ol>
+<li>Access your project&#x27;s custom code settings</li>
+<li>Add your widget code to the HTML embed component</li>
+<li>Position the component in your desired location</li>
+<li>Save and deploy</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="replit">Replit<a href="#replit" class="hash-link" aria-label="Direct link to Replit" title="Direct link to Replit">​</a></h3>
+<p><strong>HTML Integration:</strong></p>
+<ol>
+<li>Open your project&#x27;s main HTML file</li>
+<li>Paste the widget code before the closing body tag</li>
+<li>Save the file</li>
+<li>Run your project to test</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="base44">Base44<a href="#base44" class="hash-link" aria-label="Direct link to Base44" title="Direct link to Base44">​</a></h3>
+<p><strong>Custom HTML Section:</strong></p>
+<ol>
+<li>Navigate to your generated app&#x27;s custom HTML section</li>
+<li>Add your widget code to the footer or body area</li>
+<li>Save changes</li>
+<li>Deploy your application</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bubble">Bubble<a href="#bubble" class="hash-link" aria-label="Direct link to Bubble" title="Direct link to Bubble">​</a></h3>
+<p><strong>HTML Element:</strong></p>
+<ol>
+<li>Add an <strong>HTML Element</strong> to your page</li>
+<li>Paste your complete widget code</li>
+<li>Position the element where desired</li>
+<li>Set element to be visible</li>
+<li>Preview and publish</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="glide">Glide<a href="#glide" class="hash-link" aria-label="Direct link to Glide" title="Direct link to Glide">​</a></h3>
+<p><strong>Web Embed Feature:</strong></p>
+<ol>
+<li>Add a <strong>Web Embed</strong> component to your app</li>
+<li>Paste your widget code</li>
+<li>Configure display settings</li>
+<li>Publish your app</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="flutterflow">FlutterFlow<a href="#flutterflow" class="hash-link" aria-label="Direct link to FlutterFlow" title="Direct link to FlutterFlow">​</a></h3>
+<p><strong>Custom Widget:</strong></p>
+<ol>
+<li>Add a <strong>Custom Widget</strong> component</li>
+<li>Include your widget code in the web view component</li>
+<li>Configure the widget properties</li>
+<li>Build and deploy</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="zapier">Zapier<a href="#zapier" class="hash-link" aria-label="Direct link to Zapier" title="Direct link to Zapier">​</a></h3>
+<p><strong>Webhook Integration:</strong></p>
+<ol>
+<li>Set up a webhook in your automation</li>
+<li>Add your widget code to the webhook response</li>
+<li>Configure the automation trigger</li>
+<li>Test and activate</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-implementation-options">Advanced Implementation Options<a href="#advanced-implementation-options" class="hash-link" aria-label="Direct link to Advanced Implementation Options" title="Direct link to Advanced Implementation Options">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="custom-styling-integration">Custom Styling Integration<a href="#custom-styling-integration" class="hash-link" aria-label="Direct link to Custom Styling Integration" title="Direct link to Custom Styling Integration">​</a></h3>
+<p>Your widget supports customization through data attributes:</p>
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-html codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token tag punctuation" style="color:#393A34">&lt;</span><span class="token tag" style="color:#00009f">div</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">id</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">your-unique-widget-id</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-config-id</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">YOUR_CONFIG_ID</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-primary-color</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">#your-brand-color</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-agent-name</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Your Assistant Name</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-features</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">chat,voice</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f">  </span><span class="token tag attr-name" style="color:#00a4db">data-prompt-message</span><span class="token tag attr-value punctuation attr-equals" style="color:#393A34">=</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag attr-value" style="color:#e3116c">Your custom message</span><span class="token tag attr-value punctuation" style="color:#393A34">&quot;</span><span class="token tag" style="color:#00009f"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token tag" style="color:#00009f"></span><span class="token tag punctuation" style="color:#393A34">&gt;</span><span class="token tag punctuation" style="color:#393A34">&lt;/</span><span class="token tag" style="color:#00009f">div</span><span class="token tag punctuation" style="color:#393A34">&gt;</span><br></span></code></pre></div></div>
+<p><strong>Customizable Attributes:</strong></p>
+<ul>
+<li><code>data-primary-color</code>: Widget theme color (hex code)</li>
+<li><code>data-agent-name</code>: Display name for your assistant</li>
+<li><code>data-features</code>: Communication options (&quot;chat&quot;, &quot;voice&quot;, or &quot;chat,voice&quot;)</li>
+<li><code>data-prompt-message</code>: Welcome message for users</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="multiple-page-implementation">Multiple Page Implementation<a href="#multiple-page-implementation" class="hash-link" aria-label="Direct link to Multiple Page Implementation" title="Direct link to Multiple Page Implementation">​</a></h3>
+<p><strong>Site-Wide (Recommended):</strong></p>
+<ul>
+<li>Place code in footer/header templates</li>
+<li>Widget appears on all pages</li>
+<li>Consistent user experience</li>
+</ul>
+<p><strong>Page-Specific:</strong></p>
+<ul>
+<li>Add code to individual pages</li>
+<li>Targeted assistance for specific content</li>
+<li>More granular control</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="performance-considerations">Performance Considerations<a href="#performance-considerations" class="hash-link" aria-label="Direct link to Performance Considerations" title="Direct link to Performance Considerations">​</a></h3>
+<p><strong>Loading Optimization:</strong></p>
+<ul>
+<li>Widget script loads asynchronously</li>
+<li>Minimal impact on page load speed</li>
+<li>Initializes after page content loads</li>
+</ul>
+<p><strong>Mobile Responsiveness:</strong></p>
+<ul>
+<li>Widget automatically adapts to screen size</li>
+<li>Touch-friendly interface on mobile devices</li>
+<li>Voice features work on supported mobile browsers</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="testing-your-implementation">Testing Your Implementation<a href="#testing-your-implementation" class="hash-link" aria-label="Direct link to Testing Your Implementation" title="Direct link to Testing Your Implementation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="verification-steps">Verification Steps<a href="#verification-steps" class="hash-link" aria-label="Direct link to Verification Steps" title="Direct link to Verification Steps">​</a></h3>
+<ol>
+<li>
+<p><strong>Check Widget Visibility:</strong></p>
+<ul>
+<li>Widget appears on intended pages</li>
+<li>Positioning looks correct</li>
+<li>No layout conflicts</li>
+</ul>
+</li>
+<li>
+<p><strong>Test Communication Features:</strong></p>
+<ul>
+<li>Text chat functionality works</li>
+<li>Voice features activate (if enabled)</li>
+<li>Assistant responds appropriately</li>
+</ul>
+</li>
+<li>
+<p><strong>Cross-Browser Testing:</strong></p>
+<ul>
+<li>Test in Chrome, Firefox, Safari, Edge</li>
+<li>Verify mobile browser compatibility</li>
+<li>Check voice features in supported browsers</li>
+</ul>
+</li>
+<li>
+<p><strong>Performance Testing:</strong></p>
+<ul>
+<li>Page load speed not significantly impacted</li>
+<li>Widget loads without errors</li>
+<li>No console errors in browser</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="common-testing-scenarios">Common Testing Scenarios<a href="#common-testing-scenarios" class="hash-link" aria-label="Direct link to Common Testing Scenarios" title="Direct link to Common Testing Scenarios">​</a></h3>
+<p><strong>Desktop Testing:</strong></p>
+<ul>
+<li>Text chat conversations</li>
+<li>Voice activation and recognition</li>
+<li>Widget positioning and appearance</li>
+</ul>
+<p><strong>Mobile Testing:</strong></p>
+<ul>
+<li>Touch interface responsiveness</li>
+<li>Voice features on mobile browsers</li>
+<li>Screen size adaptation</li>
+</ul>
+<p><strong>Different User Flows:</strong></p>
+<ul>
+<li>New visitor experience</li>
+<li>Returning user recognition</li>
+<li>Conversation continuity</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-guidelines">Implementation Guidelines<a href="#implementation-guidelines" class="hash-link" aria-label="Direct link to Implementation Guidelines" title="Direct link to Implementation Guidelines">​</a></h3>
+<ol>
+<li>
+<p><strong>Test on Staging First:</strong></p>
+<ul>
+<li>Always test on a staging/development site</li>
+<li>Verify functionality before production deployment</li>
+<li>Check for conflicts with existing scripts</li>
+</ul>
+</li>
+<li>
+<p><strong>Monitor Performance:</strong></p>
+<ul>
+<li>Check page load speeds after implementation</li>
+<li>Monitor for any JavaScript errors</li>
+<li>Ensure widget doesn&#x27;t interfere with other features</li>
+</ul>
+</li>
+<li>
+<p><strong>User Experience:</strong></p>
+<ul>
+<li>Position widget for easy access</li>
+<li>Ensure it doesn&#x27;t block important content</li>
+<li>Test on different screen sizes</li>
+</ul>
+</li>
+<li>
+<p><strong>Documentation:</strong></p>
+<ul>
+<li>Record implementation details for team reference</li>
+<li>Document any customizations made</li>
+<li>Keep track of widget configuration settings</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="maintenance-considerations">Maintenance Considerations<a href="#maintenance-considerations" class="hash-link" aria-label="Direct link to Maintenance Considerations" title="Direct link to Maintenance Considerations">​</a></h3>
+<p><strong>Regular Checks:</strong></p>
+<ul>
+<li>Verify widget continues to function properly</li>
+<li>Monitor for any platform updates that might affect integration</li>
+<li>Test across different browsers periodically</li>
+</ul>
+<p><strong>Updates and Changes:</strong></p>
+<ul>
+<li>Widget script automatically updates from CDN</li>
+<li>Configuration changes made in dashboard reflect immediately</li>
+<li>No need to manually update embedded code</li>
+</ul>
+<hr>
+<p><strong>Need Help?</strong> If you encounter issues with platform-specific implementation, contact our support team at <a href="mailto:support@wiil.io" target="_blank" rel="noopener noreferrer">support@wiil.io</a> with your platform details and specific questions.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/web-integration/website-integration-overview"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">How to Integrate Assistant to Your Website</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/web-integration/troubleshooting"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Troubleshooting Common Issues</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#understanding-the-widget-code" class="table-of-contents__link toc-highlight">Understanding the Widget Code</a><ul><li><a href="#widget-container" class="table-of-contents__link toc-highlight">Widget Container</a></li><li><a href="#widget-script" class="table-of-contents__link toc-highlight">Widget Script</a></li></ul></li><li><a href="#website-builders-implementation" class="table-of-contents__link toc-highlight">Website Builders Implementation</a><ul><li><a href="#wordpress" class="table-of-contents__link toc-highlight">WordPress</a></li><li><a href="#wix" class="table-of-contents__link toc-highlight">Wix</a></li><li><a href="#squarespace" class="table-of-contents__link toc-highlight">Squarespace</a></li><li><a href="#webflow" class="table-of-contents__link toc-highlight">Webflow</a></li></ul></li><li><a href="#e-commerce-platforms" class="table-of-contents__link toc-highlight">E-commerce Platforms</a><ul><li><a href="#shopify" class="table-of-contents__link toc-highlight">Shopify</a></li><li><a href="#bigcommerce" class="table-of-contents__link toc-highlight">BigCommerce</a></li><li><a href="#woocommerce-wordpress" class="table-of-contents__link toc-highlight">WooCommerce (WordPress)</a></li></ul></li><li><a href="#no-code-development-platforms" class="table-of-contents__link toc-highlight">No-Code Development Platforms</a><ul><li><a href="#lovable" class="table-of-contents__link toc-highlight">Lovable</a></li><li><a href="#replit" class="table-of-contents__link toc-highlight">Replit</a></li><li><a href="#base44" class="table-of-contents__link toc-highlight">Base44</a></li><li><a href="#bubble" class="table-of-contents__link toc-highlight">Bubble</a></li><li><a href="#glide" class="table-of-contents__link toc-highlight">Glide</a></li><li><a href="#flutterflow" class="table-of-contents__link toc-highlight">FlutterFlow</a></li><li><a href="#zapier" class="table-of-contents__link toc-highlight">Zapier</a></li></ul></li><li><a href="#advanced-implementation-options" class="table-of-contents__link toc-highlight">Advanced Implementation Options</a><ul><li><a href="#custom-styling-integration" class="table-of-contents__link toc-highlight">Custom Styling Integration</a></li><li><a href="#multiple-page-implementation" class="table-of-contents__link toc-highlight">Multiple Page Implementation</a></li><li><a href="#performance-considerations" class="table-of-contents__link toc-highlight">Performance Considerations</a></li></ul></li><li><a href="#testing-your-implementation" class="table-of-contents__link toc-highlight">Testing Your Implementation</a><ul><li><a href="#verification-steps" class="table-of-contents__link toc-highlight">Verification Steps</a></li><li><a href="#common-testing-scenarios" class="table-of-contents__link toc-highlight">Common Testing Scenarios</a></li></ul></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a><ul><li><a href="#implementation-guidelines" class="table-of-contents__link toc-highlight">Implementation Guidelines</a></li><li><a href="#maintenance-considerations" class="table-of-contents__link toc-highlight">Maintenance Considerations</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Travnex. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

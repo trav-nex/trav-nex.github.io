@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-assistants/creating-assistant" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Creating an Assistant | Wiil Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://trav-nex.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://trav-nex.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://trav-nex.github.io/docs/assistants/creating-assistant"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Creating an Assistant | Wiil Documentation"><meta data-rh="true" name="description" content="Step-by-step guide to create your AI assistant with the right configuration for your business."><meta data-rh="true" property="og:description" content="Step-by-step guide to create your AI assistant with the right configuration for your business."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://trav-nex.github.io/docs/assistants/creating-assistant"><link data-rh="true" rel="alternate" href="https://trav-nex.github.io/docs/assistants/creating-assistant" hreflang="en"><link data-rh="true" rel="alternate" href="https://trav-nex.github.io/docs/assistants/creating-assistant" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Assistants","item":"https://trav-nex.github.io/docs/category/assistants"},{"@type":"ListItem","position":2,"name":"Creating an Assistant","item":"https://trav-nex.github.io/docs/assistants/creating-assistant"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Wiil Documentation RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Wiil Documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.5c68aa20.css">
+<script src="/assets/js/runtime~main.a1b3e8bb.js" defer="defer"></script>
+<script src="/assets/js/main.8c8ca28c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="Wiil Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="Wiil Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Wiil Documentation</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Tutorial</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Welcome to Wiil</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/quick-guides">Quick Guides</a><button aria-label="Expand sidebar category &#x27;Quick Guides&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/assistants">Assistants</a><button aria-label="Collapse sidebar category &#x27;Assistants&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/assistants/overview">Assistant Overview &amp; Types</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/assistants/understanding-assistant">Understanding an Assistant (Agent)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/assistants/creating-assistant">Creating an Assistant</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/assistants/multiple-assistants">When to Create Multiple Assistants</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/assistant-roles">Assistant Roles</a><button aria-label="Expand sidebar category &#x27;Assistant Roles&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/web-integration">Web Integration</a><button aria-label="Expand sidebar category &#x27;Web Integration&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/phone-integration">Phone Integration</a><button aria-label="Expand sidebar category &#x27;Phone Integration&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/category/assistants"><span>Assistants</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Creating an Assistant</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Creating an Assistant</h1></header>
+<p>Step-by-step guide to create your AI assistant with the right configuration for your business.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="before-you-start">Before You Start<a href="#before-you-start" class="hash-link" aria-label="Direct link to Before You Start" title="Direct link to Before You Start">​</a></h2>
+<p><strong>What you&#x27;ll need:</strong></p>
+<ul>
+<li>A clear idea of what to name your assistant</li>
+<li>Understanding of your primary customer language</li>
+<li>5-10 minutes to complete the setup</li>
+</ul>
+<p><strong>What you&#x27;ll create:</strong></p>
+<ul>
+<li>An AI assistant with a personality and voice</li>
+<li>The foundation for all your customer communications</li>
+<li>A system ready to connect to communication channels</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="creation-process">Creation Process<a href="#creation-process" class="hash-link" aria-label="Direct link to Creation Process" title="Direct link to Creation Process">​</a></h2>
+<p>Follow this simple 3-step process to create your assistant.</p>
+<p><img decoding="async" loading="lazy" alt="Assistant Creation Process" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPCEtLSBCYWNrZ3JvdW5kIC0tPgogIDxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjZjhmYWZjIi8+CiAgCiAgPCEtLSBUaXRsZSAtLT4KICA8dGV4dCB4PSI0MDAiIHk9IjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzc0MTUxIj5Bc3Npc3RhbnQgQ3JlYXRpb24gUHJvY2VzczwvdGV4dD4KICA8dGV4dCB4PSI0MDAiIHk9IjU1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM2YjcyODAiPlNpbXBsZSAzLXN0ZXAgcHJvY2VzcyB0byBjcmVhdGUgeW91ciBBSSBhc3Npc3RhbnQ8L3RleHQ+CiAgCiAgPCEtLSBTdGVwIDE6IENob29zZSBUeXBlIC0tPgogIDxyZWN0IHg9IjEwMCIgeT0iODAiIHdpZHRoPSIxODAiIGhlaWdodD0iMTAwIiByeD0iMTIiIGZpbGw9IiMzYjgyZjYiIG9wYWNpdHk9IjAuMSIgc3Ryb2tlPSIjM2I4MmY2IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8cmVjdCB4PSIxMjAiIHk9IjEwMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIzMCIgcng9IjgiIGZpbGw9IiMzYjgyZjYiLz4KICA8dGV4dCB4PSIxOTAiIHk9IjEyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPlNURVAgMTwvdGV4dD4KICA8dGV4dCB4PSIxOTAiIHk9IjE1MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzFlNDBhZiI+Q2hvb3NlIEFzc2lzdGFudCBUeXBlPC90ZXh0PgogIDx0ZXh0IHg9IjE5MCIgeT0iMTcwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMxZTQwYWYiPlNlbGVjdCBVbmlmaWVkIEFzc2lzdGFudCAoUmVjb21tZW5kZWQpPC90ZXh0PgogIAogIDwhLS0gQXJyb3cgMSAtLT4KICA8cGF0aCBkPSJNMjkwIDEzMCBMMzIwIDEzMCIgc3Ryb2tlPSIjNmI3MjgwIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIG1hcmtlci1lbmQ9InVybCgjYXJyb3doZWFkKSIvPgogIAogIDwhLS0gU3RlcCAyOiBCYXNpYyBTZXR0aW5ncyAtLT4KICA8cmVjdCB4PSIzMzAiIHk9IjgwIiB3aWR0aD0iMTgwIiBoZWlnaHQ9IjEwMCIgcng9IjEyIiBmaWxsPSIjMTBiOTgxIiBvcGFjaXR5PSIwLjEiIHN0cm9rZT0iIzEwYjk4MSIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPHJlY3QgeD0iMzUwIiB5PSIxMDAiIHdpZHRoPSIxNDAiIGhlaWdodD0iMzAiIHJ4PSI4IiBmaWxsPSIjMTBiOTgxIi8+CiAgPHRleHQgeD0iNDIwIiB5PSIxMjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIj5TVEVQIDI8L3RleHQ+CiAgPHRleHQgeD0iNDIwIiB5PSIxNTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwNDc4NTciPkJhc2ljIENvbmZpZ3VyYXRpb248L3RleHQ+CiAgPHRleHQgeD0iNDIwIiB5PSIxNzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzA0Nzg1NyI+TmFtZSwgUHJvdmlkZXIsIGFuZCBNb2RlbDwvdGV4dD4KICAKICA8IS0tIEFycm93IDIgLS0+CiAgPHBhdGggZD0iTTUyMCAxMzAgTDU1MCAxMzAiIHN0cm9rZT0iIzZiNzI4MCIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93aGVhZCkiLz4KICAKICA8IS0tIFN0ZXAgMzogQWR2YW5jZWQgU2V0dGluZ3MgLS0+CiAgPHJlY3QgeD0iNTYwIiB5PSI4MCIgd2lkdGg9IjE4MCIgaGVpZ2h0PSIxMDAiIHJ4PSIxMiIgZmlsbD0iI2Y1OWUwYiIgb3BhY2l0eT0iMC4xIiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxyZWN0IHg9IjU4MCIgeT0iMTAwIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjMwIiByeD0iOCIgZmlsbD0iI2Y1OWUwYiIvPgogIDx0ZXh0IHg9IjY1MCIgeT0iMTIwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ3aGl0ZSI+U1RFUCAzPC90ZXh0PgogIDx0ZXh0IHg9IjY1MCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZDk3NzA2Ij5BZHZhbmNlZCBTZXR0aW5nczwvdGV4dD4KICA8dGV4dCB4PSI2NTAiIHk9IjE3MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSIjZDk3NzA2Ij5MYW5ndWFnZSBhbmQgVm9pY2UgKE9wdGlvbmFsKTwvdGV4dD4KICAKICA8IS0tIENvbmZpZ3VyYXRpb24gRGV0YWlscyAtLT4KICA8cmVjdCB4PSI1MCIgeT0iMjIwIiB3aWR0aD0iNzAwIiBoZWlnaHQ9IjIyMCIgcng9IjE1IiBmaWxsPSJ3aGl0ZSIgc3Ryb2tlPSIjZTVlN2ViIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSI0MDAiIHk9IjI1MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzM3NDE1MSI+Q29uZmlndXJhdGlvbiBEZXRhaWxzPC90ZXh0PgogIAogIDwhLS0gU3RlcCAyIERldGFpbHMgLS0+CiAgPHJlY3QgeD0iODAiIHk9IjI3MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSI4MCIgcng9IjgiIGZpbGw9IiNmMGZkZjQiIHN0cm9rZT0iIzEwYjk4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iMjMwIiB5PSIyOTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwNDc4NTciPlJlcXVpcmVkIFNldHRpbmdzPC90ZXh0PgogIDx0ZXh0IHg9IjkwIiB5PSIzMTUiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSIjMDQ3ODU3Ij7igKIgQXNzaXN0YW50IE5hbWU6IEdpdmUgaXQgYSByZWFsIG5hbWUgKGUuZy4sICJTYXJhaCIsICJBbGV4Iik8L3RleHQ+CiAgPHRleHQgeD0iOTAiIHk9IjMzMCIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMwNDc4NTciPuKAoiBQcm92aWRlcjogR29vZ2xlIChSZWNvbW1lbmRlZCk8L3RleHQ+CiAgPHRleHQgeD0iOTAiIHk9IjM0NSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMwNDc4NTciPuKAoiBNb2RlbDogZ2VtaW5pLTIuNS1mbGFzaC1saXZlIChSZWNvbW1lbmRlZCk8L3RleHQ+CiAgCiAgPCEtLSBTdGVwIDMgRGV0YWlscyAtLT4KICA8cmVjdCB4PSI0MjAiIHk9IjI3MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSI4MCIgcng9IjgiIGZpbGw9IiNmZWYzYzciIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNTcwIiB5PSIyOTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNkOTc3MDYiPk9wdGlvbmFsIFNldHRpbmdzPC90ZXh0PgogIDx0ZXh0IHg9IjQzMCIgeT0iMzE1IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iI2Q5NzcwNiI+4oCiIExhbmd1YWdlOiBFbmdsaXNoIChVbml0ZWQgU3RhdGVzKSAtIERlZmF1bHQ8L3RleHQ+CiAgPHRleHQgeD0iNDMwIiB5PSIzMzAiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSIjZDk3NzA2Ij7igKIgVm9pY2U6IEFvZWRlIC0gZmVtYWxlIC0gRGVmYXVsdDwvdGV4dD4KICA8dGV4dCB4PSI0MzAiIHk9IjM0NSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiNkOTc3MDYiPuKAoiBBZGRpdGlvbmFsIFNldHRpbmdzOiBFeHBhbmQgZm9yIG1vcmUgb3B0aW9uczwvdGV4dD4KICAKICA8IS0tIFJlY29tbWVuZGVkIENvbmZpZ3VyYXRpb24gLS0+CiAgPHJlY3QgeD0iODAiIHk9IjM3MCIgd2lkdGg9IjY0MCIgaGVpZ2h0PSI2MCIgcng9IjgiIGZpbGw9IiNlMGYyZmUiIHN0cm9rZT0iIzAzNjlhMSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPHRleHQgeD0iNDAwIiB5PSIzOTAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMzY5YTEiPlJlY29tbWVuZGVkIGZvciBOZXcgVXNlcnM8L3RleHQ+CiAgPHRleHQgeD0iNDAwIiB5PSI0MDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzAzNjlhMSI+VW5pZmllZCBBc3Npc3RhbnQgKyBHb29nbGUgUHJvdmlkZXIgKyBnZW1pbmktMi41LWZsYXNoLWxpdmU8L3RleHQ+CiAgPHRleHQgeD0iNDAwIiB5PSI0MjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzAzNjlhMSI+RGVmYXVsdCBMYW5ndWFnZSAoRW5nbGlzaCBVUykgKyBEZWZhdWx0IFZvaWNlIChBb2VkZSk8L3RleHQ+CiAgCiAgPCEtLSBSZXN1bHQgLS0+CiAgPHJlY3QgeD0iMjUwIiB5PSI0NjAiIHdpZHRoPSIzMDAiIGhlaWdodD0iMjUiIHJ4PSIxMiIgZmlsbD0iIzEwYjk4MSIgb3BhY2l0eT0iMC4xIiBzdHJva2U9IiMxMGI5ODEiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iNDc3IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDQ3ODU3Ij5Bc3Npc3RhbnQgQ3JlYXRlZCAtIFJlYWR5IGZvciByb2xlcyBhbmQgY2hhbm5lbHM8L3RleHQ+CiAgCiAgPCEtLSBBcnJvdyBtYXJrZXIgZGVmaW5pdGlvbiAtLT4KICA8ZGVmcz4KICAgIDxtYXJrZXIgaWQ9ImFycm93aGVhZCIgbWFya2VyV2lkdGg9IjEyIiBtYXJrZXJIZWlnaHQ9IjkiIHJlZlg9IjExIiByZWZZPSI0LjUiIG9yaWVudD0iYXV0byI+CiAgICAgIDxwb2x5Z29uIHBvaW50cz0iMCAwLCAxMiA0LjUsIDAgOSIgZmlsbD0iIzZiNzI4MCIvPgogICAgPC9tYXJrZXI+CiAgPC9kZWZzPgo8L3N2Zz4=" width="800" height="500" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-choose-assistant-type">Step 1: Choose Assistant Type<a href="#step-1-choose-assistant-type" class="hash-link" aria-label="Direct link to Step 1: Choose Assistant Type" title="Direct link to Step 1: Choose Assistant Type">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="access-the-creation-page">Access the Creation Page<a href="#access-the-creation-page" class="hash-link" aria-label="Direct link to Access the Creation Page" title="Direct link to Access the Creation Page">​</a></h3>
+<ol>
+<li>Navigate to <strong>My Assistants</strong> in your dashboard</li>
+<li>Click <strong>&quot;Create New Assistant&quot;</strong></li>
+<li>You&#x27;ll see the assistant type selection screen</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="select-unified-assistant-recommended">Select Unified Assistant (Recommended)<a href="#select-unified-assistant-recommended" class="hash-link" aria-label="Direct link to Select Unified Assistant (Recommended)" title="Direct link to Select Unified Assistant (Recommended)">​</a></h3>
+<p><strong>Why Unified Assistant:</strong></p>
+<ul>
+<li>Handles both text and voice conversations</li>
+<li>Works with all communication channels</li>
+<li>Provides maximum flexibility for customers</li>
+<li>Simplest option to manage and maintain</li>
+</ul>
+<p><strong>Other Options:</strong></p>
+<ul>
+<li><strong>Chat Assistant</strong> - Text only (website chat, SMS, email)</li>
+<li><strong>Voice Assistant</strong> - Voice only (phone calls, voice chat)</li>
+</ul>
+<p><strong>Recommendation:</strong> Choose <strong>Unified Assistant</strong> unless you have specific requirements for text-only or voice-only communication.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-basic-configuration">Step 2: Basic Configuration<a href="#step-2-basic-configuration" class="hash-link" aria-label="Direct link to Step 2: Basic Configuration" title="Direct link to Step 2: Basic Configuration">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="assistant-name">Assistant Name<a href="#assistant-name" class="hash-link" aria-label="Direct link to Assistant Name" title="Direct link to Assistant Name">​</a></h3>
+<p><strong>What it is:</strong></p>
+<ul>
+<li>The name customers will see and use when talking to your assistant</li>
+<li>Appears in conversations and interactions</li>
+</ul>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li><strong>Use real names</strong> - &quot;Sarah&quot;, &quot;Alex&quot;, &quot;Jane&quot; work well</li>
+<li><strong>Keep it professional</strong> - Match your business personality</li>
+<li><strong>Make it memorable</strong> - Easy for customers to remember and use</li>
+<li><strong>Avoid technical names</strong> - Skip names like &quot;Bot_v2&quot; or &quot;AI_Assistant&quot;</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Customer Service: &quot;Sarah&quot;, &quot;Mike&quot;, &quot;Customer Support&quot;</li>
+<li>Sales: &quot;Alex&quot;, &quot;Sales Assistant&quot;, &quot;Product Helper&quot;</li>
+<li>General: &quot;Assistant&quot;, &quot;Helper&quot;, your business name</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="provider-selection">Provider Selection<a href="#provider-selection" class="hash-link" aria-label="Direct link to Provider Selection" title="Direct link to Provider Selection">​</a></h3>
+<p><strong>Google (Recommended):</strong></p>
+<ul>
+<li>Best performance for Unified Assistants</li>
+<li>Excellent voice and text capabilities</li>
+<li>Reliable and fast responses</li>
+<li>Optimized for business use</li>
+</ul>
+<p><strong>OpenAI (Alternative):</strong></p>
+<ul>
+<li>Alternative option available</li>
+<li>Good performance for text-focused applications</li>
+</ul>
+<p><strong>Recommendation:</strong> Choose <strong>Google</strong> for the best overall performance.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="model-selection">Model Selection<a href="#model-selection" class="hash-link" aria-label="Direct link to Model Selection" title="Direct link to Model Selection">​</a></h3>
+<p><strong>gemini-2.5-flash-live (Recommended):</strong></p>
+<ul>
+<li>Optimized for real-time conversations</li>
+<li>Excellent balance of speed and intelligence</li>
+<li>Best for voice and text interactions</li>
+<li>Regularly updated with improvements</li>
+</ul>
+<p><strong>Why use recommended models:</strong></p>
+<ul>
+<li>Tested and optimized for business use</li>
+<li>Best performance and reliability</li>
+<li>Regular updates and improvements</li>
+<li>Balanced cost and capability</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-advanced-settings-optional">Step 3: Advanced Settings (Optional)<a href="#step-3-advanced-settings-optional" class="hash-link" aria-label="Direct link to Step 3: Advanced Settings (Optional)" title="Direct link to Step 3: Advanced Settings (Optional)">​</a></h2>
+<p>These settings are optional and come with sensible defaults. You can skip this step and use the defaults, or customize based on your specific needs.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="language-settings">Language Settings<a href="#language-settings" class="hash-link" aria-label="Direct link to Language Settings" title="Direct link to Language Settings">​</a></h3>
+<p><strong>Default: English (United States)</strong></p>
+<ul>
+<li>Primary language for speech interactions</li>
+<li>Affects voice recognition and responses</li>
+<li>Choose based on your primary customer base</li>
+</ul>
+<p><strong>When to change:</strong></p>
+<ul>
+<li>Your customers primarily speak a different language</li>
+<li>You operate in a non-English speaking market</li>
+<li>You need specific regional language variants</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="voice-settings">Voice Settings<a href="#voice-settings" class="hash-link" aria-label="Direct link to Voice Settings" title="Direct link to Voice Settings">​</a></h3>
+<p><strong>Default: Aoede - female</strong></p>
+<ul>
+<li>How your assistant sounds during voice conversations</li>
+<li>Affects phone calls and voice chat interactions</li>
+<li>Choose based on your brand personality</li>
+</ul>
+<p><strong>Available Options:</strong></p>
+<ul>
+<li>Different voice characteristics available</li>
+<li>Male and female voice options</li>
+<li>Various accent and tone options</li>
+</ul>
+<p><strong>When to customize:</strong></p>
+<ul>
+<li>You want a specific brand voice personality</li>
+<li>Your industry has voice preferences (professional vs casual)</li>
+<li>Customer feedback suggests a different voice would work better</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="additional-settings">Additional Settings<a href="#additional-settings" class="hash-link" aria-label="Direct link to Additional Settings" title="Direct link to Additional Settings">​</a></h3>
+<p><strong>What&#x27;s included:</strong></p>
+<ul>
+<li>Advanced AI behavior settings</li>
+<li>Response timing and style options</li>
+<li>Integration-specific configurations</li>
+</ul>
+<p><strong>Recommendation:</strong> Start with defaults and adjust later based on real-world usage.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="recommended-configuration">Recommended Configuration<a href="#recommended-configuration" class="hash-link" aria-label="Direct link to Recommended Configuration" title="Direct link to Recommended Configuration">​</a></h2>
+<p>For most new users, we recommend this setup:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="quick-setup-recommended">Quick Setup (Recommended)<a href="#quick-setup-recommended" class="hash-link" aria-label="Direct link to Quick Setup (Recommended)" title="Direct link to Quick Setup (Recommended)">​</a></h3>
+<ul>
+<li><strong>Assistant Type:</strong> Unified Assistant</li>
+<li><strong>Assistant Name:</strong> Choose a professional, memorable name</li>
+<li><strong>Provider:</strong> Google</li>
+<li><strong>Model:</strong> gemini-2.5-flash-live</li>
+<li><strong>Language:</strong> English (United States) - Default</li>
+<li><strong>Voice:</strong> Aoede - female - Default</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-this-works">Why This Works<a href="#why-this-works" class="hash-link" aria-label="Direct link to Why This Works" title="Direct link to Why This Works">​</a></h3>
+<ul>
+<li><strong>Proven Performance:</strong> These settings work well for most businesses</li>
+<li><strong>Easy to Manage:</strong> Simple configuration that&#x27;s reliable</li>
+<li><strong>Room to Grow:</strong> Can be customized later as you learn what works</li>
+<li><strong>Cost Effective:</strong> Optimized balance of capability and cost</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-happens-after-creation">What Happens After Creation<a href="#what-happens-after-creation" class="hash-link" aria-label="Direct link to What Happens After Creation" title="Direct link to What Happens After Creation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="immediate-results">Immediate Results<a href="#immediate-results" class="hash-link" aria-label="Direct link to Immediate Results" title="Direct link to Immediate Results">​</a></h3>
+<ul>
+<li>Your assistant is created with the specified configuration</li>
+<li>Basic personality and voice are established</li>
+<li>Ready to be connected to roles and channels</li>
+<li>No additional technical setup required</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps-required">Next Steps Required<a href="#next-steps-required" class="hash-link" aria-label="Direct link to Next Steps Required" title="Direct link to Next Steps Required">​</a></h3>
+<ol>
+<li><strong>Create Roles</strong> - Define what your assistant knows and does</li>
+<li><strong>Add Communication Channels</strong> - Connect to phone, website, SMS, etc.</li>
+<li><strong>Test and Refine</strong> - Verify everything works as expected</li>
+<li><strong>Launch</strong> - Make available to customers</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-your-assistant-cant-do-yet">What Your Assistant Can&#x27;t Do Yet<a href="#what-your-assistant-cant-do-yet" class="hash-link" aria-label="Direct link to What Your Assistant Can&#x27;t Do Yet" title="Direct link to What Your Assistant Can&#x27;t Do Yet">​</a></h3>
+<ul>
+<li>Answer specific questions about your business (needs roles)</li>
+<li>Talk to customers (needs communication channels)</li>
+<li>Access your business information (needs knowledge sources)</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="testing-your-assistant">Testing Your Assistant<a href="#testing-your-assistant" class="hash-link" aria-label="Direct link to Testing Your Assistant" title="Direct link to Testing Your Assistant">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="before-adding-roles">Before Adding Roles<a href="#before-adding-roles" class="hash-link" aria-label="Direct link to Before Adding Roles" title="Direct link to Before Adding Roles">​</a></h3>
+<ul>
+<li>Assistant will have basic conversational ability</li>
+<li>Can introduce itself using the name you gave it</li>
+<li>Will indicate it needs more information to help with specific questions</li>
+<li>Voice and text capabilities work according to type selected</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="recommended-testing">Recommended Testing<a href="#recommended-testing" class="hash-link" aria-label="Direct link to Recommended Testing" title="Direct link to Recommended Testing">​</a></h3>
+<ol>
+<li><strong>Test the name</strong> - Make sure it sounds natural when spoken</li>
+<li><strong>Check voice quality</strong> - Listen to how it sounds during voice interactions</li>
+<li><strong>Verify language</strong> - Ensure it responds in the expected language</li>
+<li><strong>Confirm type</strong> - Make sure text/voice capabilities match your selection</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="common-configuration-mistakes">Common Configuration Mistakes<a href="#common-configuration-mistakes" class="hash-link" aria-label="Direct link to Common Configuration Mistakes" title="Direct link to Common Configuration Mistakes">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="names-to-avoid">Names to Avoid<a href="#names-to-avoid" class="hash-link" aria-label="Direct link to Names to Avoid" title="Direct link to Names to Avoid">​</a></h3>
+<ul>
+<li>Technical names like &quot;AI_Bot&quot; or &quot;System_Assistant&quot;</li>
+<li>Long complicated names that are hard to say</li>
+<li>Names that don&#x27;t match your business personality</li>
+<li>Generic names like &quot;Bot&quot; or &quot;Assistant&quot; without personality</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-issues">Configuration Issues<a href="#configuration-issues" class="hash-link" aria-label="Direct link to Configuration Issues" title="Direct link to Configuration Issues">​</a></h3>
+<ul>
+<li>Choosing Chat or Voice Assistant when you plan to use multiple channels</li>
+<li>Selecting non-recommended models without understanding the differences</li>
+<li>Changing language settings without understanding the impact on voice features</li>
+<li>Over-configuring advanced settings before understanding basic functionality</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-help">Getting Help<a href="#getting-help" class="hash-link" aria-label="Direct link to Getting Help" title="Direct link to Getting Help">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="if-you-get-stuck">If You Get Stuck<a href="#if-you-get-stuck" class="hash-link" aria-label="Direct link to If You Get Stuck" title="Direct link to If You Get Stuck">​</a></h3>
+<ul>
+<li><strong>Use recommended settings</strong> - They work for most situations</li>
+<li><strong>Start simple</strong> - You can always customize later</li>
+<li><strong>Test basic functionality</strong> - Make sure the assistant responds before adding complexity</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="support-resources">Support Resources<a href="#support-resources" class="hash-link" aria-label="Direct link to Support Resources" title="Direct link to Support Resources">​</a></h3>
+<ul>
+<li><strong>Email Support:</strong> <a href="mailto:support@wiil.io" target="_blank" rel="noopener noreferrer">support@wiil.io</a></li>
+<li><strong>Documentation:</strong> Complete guides for next steps</li>
+<li><strong>Community:</strong> <a href="https://community.travnex.com" target="_blank" rel="noopener noreferrer">Join our community</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h2>
+<p>After creating your assistant:</p>
+<ol>
+<li><strong><a href="/docs/quick-guides/create-roles">Create Assistant Roles</a></strong> - Define knowledge and behavior</li>
+<li><strong><a href="/docs/quick-guides/assign-roles">Connect Communication Channels</a></strong> - Add ways for customers to reach your assistant</li>
+<li><strong><a href="/docs/quick-guides/guided-setup#review-and-test">Test Your Setup</a></strong> - Verify everything works properly</li>
+</ol>
+<hr>
+<p><strong>Ready to create your assistant?</strong> Use the recommended settings for the fastest, most reliable setup that works for most businesses.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/assistants/understanding-assistant"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Understanding an Assistant (Agent)</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/assistants/multiple-assistants"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">When to Create Multiple Assistants</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#before-you-start" class="table-of-contents__link toc-highlight">Before You Start</a></li><li><a href="#creation-process" class="table-of-contents__link toc-highlight">Creation Process</a></li><li><a href="#step-1-choose-assistant-type" class="table-of-contents__link toc-highlight">Step 1: Choose Assistant Type</a><ul><li><a href="#access-the-creation-page" class="table-of-contents__link toc-highlight">Access the Creation Page</a></li><li><a href="#select-unified-assistant-recommended" class="table-of-contents__link toc-highlight">Select Unified Assistant (Recommended)</a></li></ul></li><li><a href="#step-2-basic-configuration" class="table-of-contents__link toc-highlight">Step 2: Basic Configuration</a><ul><li><a href="#assistant-name" class="table-of-contents__link toc-highlight">Assistant Name</a></li><li><a href="#provider-selection" class="table-of-contents__link toc-highlight">Provider Selection</a></li><li><a href="#model-selection" class="table-of-contents__link toc-highlight">Model Selection</a></li></ul></li><li><a href="#step-3-advanced-settings-optional" class="table-of-contents__link toc-highlight">Step 3: Advanced Settings (Optional)</a><ul><li><a href="#language-settings" class="table-of-contents__link toc-highlight">Language Settings</a></li><li><a href="#voice-settings" class="table-of-contents__link toc-highlight">Voice Settings</a></li><li><a href="#additional-settings" class="table-of-contents__link toc-highlight">Additional Settings</a></li></ul></li><li><a href="#recommended-configuration" class="table-of-contents__link toc-highlight">Recommended Configuration</a><ul><li><a href="#quick-setup-recommended" class="table-of-contents__link toc-highlight">Quick Setup (Recommended)</a></li><li><a href="#why-this-works" class="table-of-contents__link toc-highlight">Why This Works</a></li></ul></li><li><a href="#what-happens-after-creation" class="table-of-contents__link toc-highlight">What Happens After Creation</a><ul><li><a href="#immediate-results" class="table-of-contents__link toc-highlight">Immediate Results</a></li><li><a href="#next-steps-required" class="table-of-contents__link toc-highlight">Next Steps Required</a></li><li><a href="#what-your-assistant-cant-do-yet" class="table-of-contents__link toc-highlight">What Your Assistant Can&#39;t Do Yet</a></li></ul></li><li><a href="#testing-your-assistant" class="table-of-contents__link toc-highlight">Testing Your Assistant</a><ul><li><a href="#before-adding-roles" class="table-of-contents__link toc-highlight">Before Adding Roles</a></li><li><a href="#recommended-testing" class="table-of-contents__link toc-highlight">Recommended Testing</a></li></ul></li><li><a href="#common-configuration-mistakes" class="table-of-contents__link toc-highlight">Common Configuration Mistakes</a><ul><li><a href="#names-to-avoid" class="table-of-contents__link toc-highlight">Names to Avoid</a></li><li><a href="#configuration-issues" class="table-of-contents__link toc-highlight">Configuration Issues</a></li></ul></li><li><a href="#getting-help" class="table-of-contents__link toc-highlight">Getting Help</a><ul><li><a href="#if-you-get-stuck" class="table-of-contents__link toc-highlight">If You Get Stuck</a></li><li><a href="#support-resources" class="table-of-contents__link toc-highlight">Support Resources</a></li></ul></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Travnex. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

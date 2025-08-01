@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-assistant-roles/role-templates-types" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Role Templates &amp; Types | Wiil Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://trav-nex.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://trav-nex.github.io/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://trav-nex.github.io/docs/assistant-roles/role-templates-types"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Role Templates &amp; Types | Wiil Documentation"><meta data-rh="true" name="description" content="Learn about available role templates and when to use them versus building custom roles from scratch."><meta data-rh="true" property="og:description" content="Learn about available role templates and when to use them versus building custom roles from scratch."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://trav-nex.github.io/docs/assistant-roles/role-templates-types"><link data-rh="true" rel="alternate" href="https://trav-nex.github.io/docs/assistant-roles/role-templates-types" hreflang="en"><link data-rh="true" rel="alternate" href="https://trav-nex.github.io/docs/assistant-roles/role-templates-types" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Assistant Roles","item":"https://trav-nex.github.io/docs/category/assistant-roles"},{"@type":"ListItem","position":2,"name":"Role Templates & Types","item":"https://trav-nex.github.io/docs/assistant-roles/role-templates-types"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Wiil Documentation RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Wiil Documentation Atom Feed"><link rel="stylesheet" href="/assets/css/styles.5c68aa20.css">
+<script src="/assets/js/runtime~main.a1b3e8bb.js" defer="defer"></script>
+<script src="/assets/js/main.8c8ca28c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="Wiil Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="Wiil Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Wiil Documentation</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/intro">Tutorial</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/intro">Welcome to Wiil</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/quick-guides">Quick Guides</a><button aria-label="Expand sidebar category &#x27;Quick Guides&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/assistants">Assistants</a><button aria-label="Expand sidebar category &#x27;Assistants&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/docs/category/assistant-roles">Assistant Roles</a><button aria-label="Collapse sidebar category &#x27;Assistant Roles&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/assistant-roles/overview">Role Overview &amp; Understanding</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/assistant-roles/role-templates-types">Role Templates &amp; Types</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/web-integration">Web Integration</a><button aria-label="Expand sidebar category &#x27;Web Integration&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/docs/category/phone-integration">Phone Integration</a><button aria-label="Expand sidebar category &#x27;Phone Integration&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/category/assistant-roles"><span>Assistant Roles</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Role Templates &amp; Types</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Role Templates &amp; Types</h1></header>
+<p>Learn about available role templates and when to use them versus building custom roles from scratch.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-role-templates">Understanding Role Templates<a href="#understanding-role-templates" class="hash-link" aria-label="Direct link to Understanding Role Templates" title="Direct link to Understanding Role Templates">​</a></h2>
+<p>Role templates are pre-configured role structures that provide a foundation for common business functions. They include pre-written behavior guidelines, communication styles, and task permissions that you can customize with your specific knowledge sources.</p>
+<p><strong>Templates provide:</strong></p>
+<ul>
+<li><strong>Behavior Guidelines</strong> - How the assistant should act in this role</li>
+<li><strong>Communication Style</strong> - Tone and approach for responses</li>
+<li><strong>Task Permissions</strong> - What actions the assistant can perform</li>
+<li><strong>Response Patterns</strong> - Standard ways to handle common situations</li>
+</ul>
+<p><strong>You add:</strong></p>
+<ul>
+<li><strong>Knowledge Sources</strong> - Your business-specific information</li>
+<li><strong>Custom Guidelines</strong> - Specific rules for your business</li>
+<li><strong>Introduction Messages</strong> - Personalized greetings and explanations</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="available-role-templates">Available Role Templates<a href="#available-role-templates" class="hash-link" aria-label="Direct link to Available Role Templates" title="Direct link to Available Role Templates">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Role Templates Comparison" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPCEtLSBCYWNrZ3JvdW5kIC0tPgogIDxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjZjhmYWZjIi8+CiAgCiAgPCEtLSBUaXRsZSAtLT4KICA8dGV4dCB4PSI0MDAiIHk9IjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzc0MTUxIj5BdmFpbGFibGUgUm9sZSBUZW1wbGF0ZXM8L3RleHQ+CiAgPHRleHQgeD0iNDAwIiB5PSI1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNmI3MjgwIj5DaG9vc2UgYSBwcmUtY29uZmlndXJlZCB0ZW1wbGF0ZSBvciBidWlsZCBhIGN1c3RvbSByb2xlIGZyb20gc2NyYXRjaDwvdGV4dD4KICAKICA8IS0tIEN1c3RvbWVyIFNlcnZpY2UgVGVtcGxhdGUgLS0+CiAgPHJlY3QgeD0iNTAiIHk9IjgwIiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjE0MCIgcng9IjEyIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMzYjgyZjYiIHN0cm9rZS13aWR0aD0iMiIvPgogIDxyZWN0IHg9IjcwIiB5PSIxMDAiIHdpZHRoPSIxMjAiIGhlaWdodD0iMzAiIHJ4PSI2IiBmaWxsPSIjM2I4MmY2Ii8+CiAgPHRleHQgeD0iMTMwIiB5PSIxMjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIj5DdXN0b21lciBTZXJ2aWNlPC90ZXh0PgogIDx0ZXh0IHg9IjEzMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMWU0MGFmIj5CZXN0IEZvcjo8L3RleHQ+CiAgPHRleHQgeD0iNjAiIHk9IjE3MCIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOSIgZmlsbD0iIzFlNDBhZiI+4oCiIEhhbmRsZSBjdXN0b21lciBpbnF1aXJpZXM8L3RleHQ+CiAgPHRleHQgeD0iNjAiIHk9IjE4NSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOSIgZmlsbD0iIzFlNDBhZiI+4oCiIFJlc29sdmUgY29tbW9uIGlzc3VlczwvdGV4dD4KICA8dGV4dCB4PSI2MCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI5IiBmaWxsPSIjMWU0MGFmIj7igKIgUHJvdmlkZSBzdXBwb3J0IGd1aWRhbmNlPC90ZXh0PgogIAogIDwhLS0gU2FsZXMgQWdlbnQgVGVtcGxhdGUgLS0+CiAgPHJlY3QgeD0iMjMwIiB5PSI4MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIxNDAiIHJ4PSIxMiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjMTBiOTgxIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8cmVjdCB4PSIyNTAiIHk9IjEwMCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMCIgcng9IjYiIGZpbGw9IiMxMGI5ODEiLz4KICA8dGV4dCB4PSIzMTAiIHk9IjEyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPlNhbGVzIEFnZW50PC90ZXh0PgogIDx0ZXh0IHg9IjMxMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDQ3ODU3Ij5CZXN0IEZvcjo8L3RleHQ+CiAgPHRleHQgeD0iMjQwIiB5PSIxNzAiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjkiIGZpbGw9IiMwNDc4NTciPuKAoiBRdWFsaWZ5IGxlYWRzPC90ZXh0PgogIDx0ZXh0IHg9IjI0MCIgeT0iMTg1IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI5IiBmaWxsPSIjMDQ3ODU3Ij7igKIgUHJvZHVjdCBpbmZvcm1hdGlvbjwvdGV4dD4KICA8dGV4dCB4PSIyNDAiIHk9IjIwMCIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOSIgZmlsbD0iIzA0Nzg1NyI+4oCiIERyaXZlIGNvbnZlcnNpb25zPC90ZXh0PgogIAogIDwhLS0gVGVjaG5pY2FsIFN1cHBvcnQgVGVtcGxhdGUgLS0+CiAgPHJlY3QgeD0iNDEwIiB5PSI4MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIxNDAiIHJ4PSIxMiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjZjU5ZTBiIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8cmVjdCB4PSI0MzAiIHk9IjEwMCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMCIgcng9IjYiIGZpbGw9IiNmNTllMGIiLz4KICA8dGV4dCB4PSI0OTAiIHk9IjEyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPlRlY2huaWNhbCBTdXBwb3J0PC90ZXh0PgogIDx0ZXh0IHg9IjQ5MCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZDk3NzA2Ij5CZXN0IEZvcjo8L3RleHQ+CiAgPHRleHQgeD0iNDIwIiB5PSIxNzAiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjkiIGZpbGw9IiNkOTc3MDYiPuKAoiBUZWNobmljYWwgYXNzaXN0YW5jZTwvdGV4dD4KICA8dGV4dCB4PSI0MjAiIHk9IjE4NSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOSIgZmlsbD0iI2Q5NzcwNiI+4oCiIFRyb3VibGVzaG9vdGluZyBndWlkZXM8L3RleHQ+CiAgPHRleHQgeD0iNDIwIiB5PSIyMDAiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjkiIGZpbGw9IiNkOTc3MDYiPuKAoiBQcm9kdWN0IHN1cHBvcnQ8L3RleHQ+CiAgCiAgPCEtLSBSZWNlcHRpb25pc3QgVGVtcGxhdGUgLS0+CiAgPHJlY3QgeD0iNTkwIiB5PSI4MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIxNDAiIHJ4PSIxMiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjOGI1Y2Y2IiBzdHJva2Utd2lkdGg9IjIiLz4KICA8cmVjdCB4PSI2MTAiIHk9IjEwMCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSIzMCIgcng9IjYiIGZpbGw9IiM4YjVjZjYiLz4KICA8dGV4dCB4PSI2NzAiIHk9IjEyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPlJlY2VwdGlvbmlzdDwvdGV4dD4KICA8dGV4dCB4PSI2NzAiIHk9IjE1MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzdjM2FlZCI+QmVzdCBGb3I6PC90ZXh0PgogIDx0ZXh0IHg9IjYwMCIgeT0iMTcwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI5IiBmaWxsPSIjN2MzYWVkIj7igKIgTWFuYWdlIGFwcG9pbnRtZW50czwvdGV4dD4KICA8dGV4dCB4PSI2MDAiIHk9IjE4NSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOSIgZmlsbD0iIzdjM2FlZCI+4oCiIFJvdXRlIGNhbGxzPC90ZXh0PgogIDx0ZXh0IHg9IjYwMCIgeT0iMjAwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI5IiBmaWxsPSIjN2MzYWVkIj7igKIgR2VuZXJhbCBpbmZvcm1hdGlvbjwvdGV4dD4KICAKICA8IS0tIEN1c3RvbSBCdWlsZCBPcHRpb24gLS0+CiAgPHJlY3QgeD0iMjAwIiB5PSIyNTAiIHdpZHRoPSI0MDAiIGhlaWdodD0iODAiIHJ4PSIxMiIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjNmI3MjgwIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8cmVjdCB4PSIyMjAiIHk9IjI3MCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIzMCIgcng9IjYiIGZpbGw9IiM2YjcyODAiLz4KICA8dGV4dCB4PSI0MDAiIHk9IjI5MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPkN1c3RvbSBCdWlsZCAtIENvbXBsZXRlIEZsZXhpYmlsaXR5PC90ZXh0PgogIDx0ZXh0IHg9IjQwMCIgeT0iMzE1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMzNzQxNTEiPkJ1aWxkIGEgY29tcGxldGVseSBjdXN0b20gcm9sZSBmb3IgdW5pcXVlIHJlcXVpcmVtZW50cyBhbmQgc3BlY2lhbGl6ZWQgbmVlZHM8L3RleHQ+CiAgCiAgPCEtLSBUZW1wbGF0ZSB2cyBDdXN0b20gRGVjaXNpb24gLS0+CiAgPHJlY3QgeD0iNTAiIHk9IjM2MCIgd2lkdGg9IjMyMCIgaGVpZ2h0PSIxMjAiIHJ4PSIxMiIgZmlsbD0iI2YwZmRmNCIgc3Ryb2tlPSIjMTBiOTgxIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIyMTAiIHk9IjM4NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzA0Nzg1NyI+VXNlIFRlbXBsYXRlcyBXaGVuOjwvdGV4dD4KICA8dGV4dCB4PSI3MCIgeT0iNDA1IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzA0Nzg1NyI+4pyTIFlvdXIgbmVlZHMgbWF0Y2ggYSBzdGFuZGFyZCBidXNpbmVzcyBmdW5jdGlvbjwvdGV4dD4KICA8dGV4dCB4PSI3MCIgeT0iNDIwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzA0Nzg1NyI+4pyTIFlvdSB3YW50IHRvIGdldCBzdGFydGVkIHF1aWNrbHk8L3RleHQ+CiAgPHRleHQgeD0iNzAiIHk9IjQzNSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMwNDc4NTciPuKckyBZb3UgaGF2ZSBrbm93bGVkZ2Ugc291cmNlcyByZWFkeSB0byBhZGQ8L3RleHQ+CiAgPHRleHQgeD0iNzAiIHk9IjQ1MCIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMwNDc4NTciPuKckyBZb3UgcHJlZmVyIHByb3ZlbiwgdGVzdGVkIGNvbmZpZ3VyYXRpb25zPC90ZXh0PgogIAogIDxyZWN0IHg9IjQzMCIgeT0iMzYwIiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjEyMCIgcng9IjEyIiBmaWxsPSIjZmVmM2M3IiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iMiIvPgogIDx0ZXh0IHg9IjU5MCIgeT0iMzg1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZDk3NzA2Ij5Vc2UgQ3VzdG9tIEJ1aWxkIFdoZW46PC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDA1IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iI2Q5NzcwNiI+4pyTIFlvdSBoYXZlIHZlcnkgc3BlY2lmaWMgcmVxdWlyZW1lbnRzPC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDIwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iI2Q5NzcwNiI+4pyTIFRlbXBsYXRlcyBkb24ndCBtYXRjaCB5b3VyIG5lZWRzPC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDM1IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iI2Q5NzcwNiI+4pyTIFlvdSBuZWVkIHNwZWNpYWxpemVkIGJlaGF2aW9yPC90ZXh0PgogIDx0ZXh0IHg9IjQ1MCIgeT0iNDUwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iI2Q5NzcwNiI+4pyTIFlvdSB3YW50IGNvbXBsZXRlIGNvbnRyb2wgb3ZlciBzZXR1cDwvdGV4dD4KPC9zdmc+" width="800" height="500" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="customer-service-representative">Customer Service Representative<a href="#customer-service-representative" class="hash-link" aria-label="Direct link to Customer Service Representative" title="Direct link to Customer Service Representative">​</a></h3>
+<p><strong>Pre-configured for:</strong> General customer support and issue resolution</p>
+<p><strong>What it includes:</strong></p>
+<ul>
+<li>Professional, helpful communication style</li>
+<li>Guidelines for handling common customer inquiries</li>
+<li>Escalation procedures for complex issues</li>
+<li>Empathetic response patterns for frustrated customers</li>
+</ul>
+<p><strong>Best used for:</strong></p>
+<ul>
+<li>General customer support inquiries</li>
+<li>FAQ responses and basic troubleshooting</li>
+<li>Account questions and general assistance</li>
+<li>First-line customer service interactions</li>
+</ul>
+<p><strong>Knowledge sources you should add:</strong></p>
+<ul>
+<li>Company FAQ documents</li>
+<li>Customer service policies</li>
+<li>Return and refund procedures</li>
+<li>Contact information for escalations</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="sales-agent">Sales Agent<a href="#sales-agent" class="hash-link" aria-label="Direct link to Sales Agent" title="Direct link to Sales Agent">​</a></h3>
+<p><strong>Pre-configured for:</strong> Lead qualification and sales conversations</p>
+<p><strong>What it includes:</strong></p>
+<ul>
+<li>Engaging, persuasive communication style</li>
+<li>Guidelines for product presentations</li>
+<li>Lead qualification question patterns</li>
+<li>Conversion-focused response strategies</li>
+</ul>
+<p><strong>Best used for:</strong></p>
+<ul>
+<li>Product information requests</li>
+<li>Lead qualification conversations</li>
+<li>Pricing inquiries and comparisons</li>
+<li>Sales process guidance</li>
+</ul>
+<p><strong>Knowledge sources you should add:</strong></p>
+<ul>
+<li>Product catalogs and specifications</li>
+<li>Pricing information and packages</li>
+<li>Sales scripts and talking points</li>
+<li>Competitor comparison data</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technical-support">Technical Support<a href="#technical-support" class="hash-link" aria-label="Direct link to Technical Support" title="Direct link to Technical Support">​</a></h3>
+<p><strong>Pre-configured for:</strong> Technical assistance and troubleshooting</p>
+<p><strong>What it includes:</strong></p>
+<ul>
+<li>Clear, methodical communication style</li>
+<li>Step-by-step troubleshooting approaches</li>
+<li>Technical terminology guidelines</li>
+<li>Problem-solving conversation patterns</li>
+</ul>
+<p><strong>Best used for:</strong></p>
+<ul>
+<li>Technical product support</li>
+<li>Troubleshooting and diagnostics</li>
+<li>How-to guidance and tutorials</li>
+<li>Technical documentation assistance</li>
+</ul>
+<p><strong>Knowledge sources you should add:</strong></p>
+<ul>
+<li>Technical documentation and manuals</li>
+<li>Troubleshooting guides and procedures</li>
+<li>Product specifications and requirements</li>
+<li>Common issue solutions database</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="receptionist">Receptionist<a href="#receptionist" class="hash-link" aria-label="Direct link to Receptionist" title="Direct link to Receptionist">​</a></h3>
+<p><strong>Pre-configured for:</strong> Administrative assistance and call routing</p>
+<p><strong>What it includes:</strong></p>
+<ul>
+<li>Professional, welcoming communication style</li>
+<li>Appointment scheduling conversation patterns</li>
+<li>Call routing and transfer procedures</li>
+<li>Information gathering and organization</li>
+</ul>
+<p><strong>Best used for:</strong></p>
+<ul>
+<li>Appointment scheduling and management</li>
+<li>General company information requests</li>
+<li>Call routing and departmental connections</li>
+<li>Basic administrative assistance</li>
+</ul>
+<p><strong>Knowledge sources you should add:</strong></p>
+<ul>
+<li>Company directory and contact information</li>
+<li>Service descriptions and scheduling policies</li>
+<li>Hours of operation and availability</li>
+<li>Frequently requested company information</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="custom-build">Custom Build<a href="#custom-build" class="hash-link" aria-label="Direct link to Custom Build" title="Direct link to Custom Build">​</a></h3>
+<p><strong>For unique requirements that don&#x27;t match standard templates</strong></p>
+<p><strong>What it provides:</strong></p>
+<ul>
+<li>Complete flexibility in role configuration</li>
+<li>Ability to define custom behavior from scratch</li>
+<li>Full control over communication style and permissions</li>
+<li>Tailored response patterns for specific needs</li>
+</ul>
+<p><strong>Best used when:</strong></p>
+<ul>
+<li>Your business has highly specialized requirements</li>
+<li>Standard templates don&#x27;t match your needs</li>
+<li>You need very specific behavior patterns</li>
+<li>You have unique industry or compliance requirements</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="templates-require-knowledge-sources">Templates Require Knowledge Sources<a href="#templates-require-knowledge-sources" class="hash-link" aria-label="Direct link to Templates Require Knowledge Sources" title="Direct link to Templates Require Knowledge Sources">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="Knowledge Sources Required" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDgwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPCEtLSBCYWNrZ3JvdW5kIC0tPgogIDxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZjhmYWZjIi8+CiAgCiAgPCEtLSBUaXRsZSAtLT4KICA8dGV4dCB4PSI0MDAiIHk9IjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzc0MTUxIj5UZW1wbGF0ZXMgTmVlZCBLbm93bGVkZ2UgU291cmNlcyB0byBXb3JrIFdlbGw8L3RleHQ+CiAgPHRleHQgeD0iNDAwIiB5PSI1NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNmI3MjgwIj5UZW1wbGF0ZXMgcHJvdmlkZSB0aGUgc3RydWN0dXJlIC0geW91IGFkZCB0aGUga25vd2xlZGdlIHRoYXQgbWFrZXMgdGhlbSBpbnRlbGxpZ2VudDwvdGV4dD4KICAKICA8IS0tIFRlbXBsYXRlIFN0cnVjdHVyZSAoTGVmdCkgLS0+CiAgPHJlY3QgeD0iNTAiIHk9IjkwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE2MCIgcng9IjEyIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMzYjgyZjYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxyZWN0IHg9IjcwIiB5PSIxMTAiIHdpZHRoPSIxNjAiIGhlaWdodD0iMzAiIHJ4PSI2IiBmaWxsPSIjM2I4MmY2Ii8+CiAgPHRleHQgeD0iMTUwIiB5PSIxMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIj5ST0xFIFRFTVBMQVRFPC90ZXh0PgogIAogIDx0ZXh0IHg9IjE1MCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMWU0MGFmIj5Qcm92aWRlczo8L3RleHQ+CiAgPHRleHQgeD0iODAiIHk9IjE4MCIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMxZTQwYWYiPuKAoiBQcmUtd3JpdHRlbiBiZWhhdmlvciBndWlkZWxpbmVzPC90ZXh0PgogIDx0ZXh0IHg9IjgwIiB5PSIxOTUiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSIjMWU0MGFmIj7igKIgQ29tbXVuaWNhdGlvbiBzdHlsZSBzZXR0aW5nczwvdGV4dD4KICA8dGV4dCB4PSI4MCIgeT0iMjEwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzFlNDBhZiI+4oCiIFRhc2sgcGVybWlzc2lvbiBzdHJ1Y3R1cmU8L3RleHQ+CiAgPHRleHQgeD0iODAiIHk9IjIyNSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMxZTQwYWYiPuKAoiBTdGFuZGFyZCByZXNwb25zZSBwYXR0ZXJuczwvdGV4dD4KICAKICA8IS0tIFBsdXMgU3ltYm9sIC0tPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjE3MCIgcj0iMjAiIGZpbGw9IiM2YjcyODAiLz4KICA8dGV4dCB4PSIzMDAiIHk9IjE3OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0id2hpdGUiPis8L3RleHQ+CiAgCiAgPCEtLSBLbm93bGVkZ2UgU291cmNlcyAoQ2VudGVyKSAtLT4KICA8cmVjdCB4PSIzNTAiIHk9IjkwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE2MCIgcng9IjEyIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMxMGI5ODEiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxyZWN0IHg9IjM3MCIgeT0iMTEwIiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjMwIiByeD0iNiIgZmlsbD0iIzEwYjk4MSIvPgogIDx0ZXh0IHg9IjQ1MCIgeT0iMTMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ3aGl0ZSI+WU9VUiBLTk9XTEVER0U8L3RleHQ+CiAgCiAgPHRleHQgeD0iNDUwIiB5PSIxNjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwNDc4NTciPllvdSBBZGQ6PC90ZXh0PgogIDx0ZXh0IHg9IjM4MCIgeT0iMTgwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzA0Nzg1NyI+4oCiIENvbXBhbnktc3BlY2lmaWMgaW5mb3JtYXRpb248L3RleHQ+CiAgPHRleHQgeD0iMzgwIiB5PSIxOTUiIHRleHQtYW5jaG9yPSJzdGFydCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSIjMDQ3ODU3Ij7igKIgUHJvZHVjdCBkb2N1bWVudGF0aW9uPC90ZXh0PgogIDx0ZXh0IHg9IjM4MCIgeT0iMjEwIiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzA0Nzg1NyI+4oCiIEZBUXMgYW5kIHN1cHBvcnQgY29udGVudDwvdGV4dD4KICA8dGV4dCB4PSIzODAiIHk9IjIyNSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiMwNDc4NTciPuKAoiBQb2xpY2llcyBhbmQgcHJvY2VkdXJlczwvdGV4dD4KICAKICA8IS0tIEVxdWFscyBTeW1ib2wgLS0+CiAgPHJlY3QgeD0iNTc1IiB5PSIxNjUiIHdpZHRoPSIzMCIgaGVpZ2h0PSI0IiBmaWxsPSIjNmI3MjgwIi8+CiAgPHJlY3QgeD0iNTc1IiB5PSIxNzUiIHdpZHRoPSIzMCIgaGVpZ2h0PSI0IiBmaWxsPSIjNmI3MjgwIi8+CiAgCiAgPCEtLSBSZXN1bHQgKFJpZ2h0KSAtLT4KICA8cmVjdCB4PSI2MzAiIHk9IjkwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjE2MCIgcng9IjEyIiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxyZWN0IHg9IjY1MCIgeT0iMTEwIiB3aWR0aD0iODAiIGhlaWdodD0iMzAiIHJ4PSI2IiBmaWxsPSIjZjU5ZTBiIi8+CiAgPHRleHQgeD0iNjkwIiB5PSIxMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIj5TTUFSVCBST0xFPC90ZXh0PgogIAogIDx0ZXh0IHg9IjY5MCIgeT0iMTYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZDk3NzA2Ij5SZXN1bHQ6PC90ZXh0PgogIDx0ZXh0IHg9IjY5MCIgeT0iMTgwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiNkOTc3MDYiPkludGVsbGlnZW50PC90ZXh0PgogIDx0ZXh0IHg9IjY5MCIgeT0iMTk1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiNkOTc3MDYiPnJlc3BvbnNlcyB1c2luZzwvdGV4dD4KICA8dGV4dCB4PSI2OTAiIHk9IjIxMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSIjZDk3NzA2Ij55b3VyIGJ1c2luZXNzPC90ZXh0PgogIDx0ZXh0IHg9IjY5MCIgeT0iMjI1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiNkOTc3MDYiPmluZm9ybWF0aW9uPC90ZXh0PgogIAogIDwhLS0gSW1wb3J0YW50IE5vdGUgLS0+CiAgPHJlY3QgeD0iMTUwIiB5PSIyNzAiIHdpZHRoPSI1MDAiIGhlaWdodD0iMjAiIHJ4PSIxMCIgZmlsbD0iI2ZlZjJmMiIvPgogIDx0ZXh0IHg9IjQwMCIgeT0iMjgzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTEiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjZGMyNjI2Ij5JbXBvcnRhbnQ6IFRlbXBsYXRlcyB3aXRob3V0IGtub3dsZWRnZSBzb3VyY2VzIGNhbiBvbmx5IHByb3ZpZGUgZ2VuZXJpYyByZXNwb25zZXM8L3RleHQ+Cjwvc3ZnPg==" width="800" height="300" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-knowledge-sources-are-essential">Why Knowledge Sources Are Essential<a href="#why-knowledge-sources-are-essential" class="hash-link" aria-label="Direct link to Why Knowledge Sources Are Essential" title="Direct link to Why Knowledge Sources Are Essential">​</a></h3>
+<p><strong>Templates alone provide structure, not content:</strong></p>
+<ul>
+<li>Templates give your assistant a framework for behavior</li>
+<li>Without knowledge sources, responses will be generic and unhelpful</li>
+<li>Knowledge sources provide the specific information customers need</li>
+</ul>
+<p><strong>Example without knowledge sources:</strong></p>
+<ul>
+<li><strong>Customer:</strong> &quot;What are your business hours?&quot;</li>
+<li><strong>Assistant:</strong> &quot;I&#x27;d be happy to help with information about business hours, but I don&#x27;t have access to that specific information.&quot;</li>
+</ul>
+<p><strong>Example with knowledge sources:</strong></p>
+<ul>
+<li><strong>Customer:</strong> &quot;What are your business hours?&quot;</li>
+<li><strong>Assistant:</strong> &quot;We&#x27;re open Monday through Friday from 9 AM to 6 PM, and Saturday from 10 AM to 4 PM. We&#x27;re closed on Sundays.&quot;</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-knowledge-sources-to-prepare">What Knowledge Sources to Prepare<a href="#what-knowledge-sources-to-prepare" class="hash-link" aria-label="Direct link to What Knowledge Sources to Prepare" title="Direct link to What Knowledge Sources to Prepare">​</a></h3>
+<p><strong>For Customer Service Template:</strong></p>
+<ul>
+<li>FAQ documents with common questions and answers</li>
+<li>Customer service policies and procedures</li>
+<li>Product information and specifications</li>
+<li>Contact information for human escalation</li>
+</ul>
+<p><strong>For Sales Agent Template:</strong></p>
+<ul>
+<li>Product catalogs with features and benefits</li>
+<li>Pricing sheets and package information</li>
+<li>Sales scripts and conversation starters</li>
+<li>Competitor comparison information</li>
+</ul>
+<p><strong>For Technical Support Template:</strong></p>
+<ul>
+<li>Technical documentation and user manuals</li>
+<li>Troubleshooting guides with step-by-step solutions</li>
+<li>System requirements and compatibility information</li>
+<li>Known issues and their resolutions</li>
+</ul>
+<p><strong>For Receptionist Template:</strong></p>
+<ul>
+<li>Company directory with names and departments</li>
+<li>Scheduling policies and availability information</li>
+<li>General company information and services</li>
+<li>Contact information for different departments</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="template-vs-custom-build-decision-guide">Template vs Custom Build Decision Guide<a href="#template-vs-custom-build-decision-guide" class="hash-link" aria-label="Direct link to Template vs Custom Build Decision Guide" title="Direct link to Template vs Custom Build Decision Guide">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="choose-templates-when">Choose Templates When:<a href="#choose-templates-when" class="hash-link" aria-label="Direct link to Choose Templates When:" title="Direct link to Choose Templates When:">​</a></h3>
+<p><strong>Your needs match standard business functions:</strong></p>
+<ul>
+<li>Customer service, sales, technical support, or reception</li>
+<li>Common business processes that templates are designed for</li>
+<li>Standard communication patterns that work for your industry</li>
+</ul>
+<p><strong>You want to get started quickly:</strong></p>
+<ul>
+<li>Pre-configured settings save setup time</li>
+<li>Proven behavior patterns reduce trial and error</li>
+<li>Less complexity in initial configuration</li>
+</ul>
+<p><strong>You have knowledge sources ready:</strong></p>
+<ul>
+<li>Documents and information prepared to upload</li>
+<li>Clear understanding of what information the role needs</li>
+<li>Business content organized and accessible</li>
+</ul>
+<p><strong>You prefer tested configurations:</strong></p>
+<ul>
+<li>Templates are based on successful business practices</li>
+<li>Reduced risk of configuration issues</li>
+<li>Established patterns for common scenarios</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="choose-custom-build-when">Choose Custom Build When:<a href="#choose-custom-build-when" class="hash-link" aria-label="Direct link to Choose Custom Build When:" title="Direct link to Choose Custom Build When:">​</a></h3>
+<p><strong>You have very specific requirements:</strong></p>
+<ul>
+<li>Unique business processes not covered by templates</li>
+<li>Specialized industry needs or compliance requirements</li>
+<li>Custom workflow requirements that don&#x27;t match templates</li>
+</ul>
+<p><strong>Templates don&#x27;t match your needs:</strong></p>
+<ul>
+<li>Your business function doesn&#x27;t fit standard categories</li>
+<li>You need behavior patterns not included in templates</li>
+<li>Communication style requirements are very specific</li>
+</ul>
+<p><strong>You need specialized behavior:</strong></p>
+<ul>
+<li>Unique conversation flows or response patterns</li>
+<li>Custom escalation procedures or task permissions</li>
+<li>Specialized knowledge areas not covered by templates</li>
+</ul>
+<p><strong>You want complete control:</strong></p>
+<ul>
+<li>Full customization of every aspect of the role</li>
+<li>Specific guidelines that differ from template defaults</li>
+<li>Custom integration requirements or unique features</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started-with-templates">Getting Started with Templates<a href="#getting-started-with-templates" class="hash-link" aria-label="Direct link to Getting Started with Templates" title="Direct link to Getting Started with Templates">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="recommended-approach">Recommended Approach<a href="#recommended-approach" class="hash-link" aria-label="Direct link to Recommended Approach" title="Direct link to Recommended Approach">​</a></h3>
+<p><strong>1. Start with Templates:</strong></p>
+<ul>
+<li>Choose the template that most closely matches your needs</li>
+<li>Templates provide a solid foundation to build upon</li>
+<li>Easier to customize a template than build from scratch</li>
+</ul>
+<p><strong>2. Prepare Knowledge Sources First:</strong></p>
+<ul>
+<li>Gather your business information before creating the role</li>
+<li>Organize documents by topic and relevance</li>
+<li>Ensure information is current and accurate</li>
+</ul>
+<p><strong>3. Customize After Testing:</strong></p>
+<ul>
+<li>Use the template as-is initially to understand how it works</li>
+<li>Test with real scenarios to identify needed adjustments</li>
+<li>Make incremental changes based on actual usage</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="template-selection-tips">Template Selection Tips<a href="#template-selection-tips" class="hash-link" aria-label="Direct link to Template Selection Tips" title="Direct link to Template Selection Tips">​</a></h3>
+<p><strong>If you&#x27;re unsure which template to choose:</strong></p>
+<ul>
+<li><strong>Customer Service</strong> - Good default for general business support</li>
+<li><strong>Sales Agent</strong> - Best for product-focused businesses</li>
+<li><strong>Technical Support</strong> - Essential for software/hardware companies</li>
+<li><strong>Receptionist</strong> - Ideal for service-based businesses</li>
+</ul>
+<p><strong>You can always create multiple roles:</strong></p>
+<ul>
+<li>Different templates for different business functions</li>
+<li>Same assistant can use different roles in different contexts</li>
+<li>Start with one template and add others as needed</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h2>
+<p>After understanding templates and types:</p>
+<ol>
+<li><strong><a href="/docs/quick-guides/create-roles">Create Your First Role</a></strong> - Step-by-step role creation process</li>
+<li><strong><a href="/docs/quick-guides/knowledge-source">Prepare Knowledge Sources</a></strong> - Upload business information</li>
+</ol>
+<hr>
+<p><strong>Key Takeaway:</strong> Templates provide proven structures for common business functions, but they need your knowledge sources to provide intelligent, helpful responses to customers.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/assistant-roles/overview"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Role Overview &amp; Understanding</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/category/web-integration"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Web Integration</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#understanding-role-templates" class="table-of-contents__link toc-highlight">Understanding Role Templates</a></li><li><a href="#available-role-templates" class="table-of-contents__link toc-highlight">Available Role Templates</a><ul><li><a href="#customer-service-representative" class="table-of-contents__link toc-highlight">Customer Service Representative</a></li><li><a href="#sales-agent" class="table-of-contents__link toc-highlight">Sales Agent</a></li><li><a href="#technical-support" class="table-of-contents__link toc-highlight">Technical Support</a></li><li><a href="#receptionist" class="table-of-contents__link toc-highlight">Receptionist</a></li><li><a href="#custom-build" class="table-of-contents__link toc-highlight">Custom Build</a></li></ul></li><li><a href="#templates-require-knowledge-sources" class="table-of-contents__link toc-highlight">Templates Require Knowledge Sources</a><ul><li><a href="#why-knowledge-sources-are-essential" class="table-of-contents__link toc-highlight">Why Knowledge Sources Are Essential</a></li><li><a href="#what-knowledge-sources-to-prepare" class="table-of-contents__link toc-highlight">What Knowledge Sources to Prepare</a></li></ul></li><li><a href="#template-vs-custom-build-decision-guide" class="table-of-contents__link toc-highlight">Template vs Custom Build Decision Guide</a><ul><li><a href="#choose-templates-when" class="table-of-contents__link toc-highlight">Choose Templates When:</a></li><li><a href="#choose-custom-build-when" class="table-of-contents__link toc-highlight">Choose Custom Build When:</a></li></ul></li><li><a href="#getting-started-with-templates" class="table-of-contents__link toc-highlight">Getting Started with Templates</a><ul><li><a href="#recommended-approach" class="table-of-contents__link toc-highlight">Recommended Approach</a></li><li><a href="#template-selection-tips" class="table-of-contents__link toc-highlight">Template Selection Tips</a></li></ul></li><li><a href="#next-steps" class="table-of-contents__link toc-highlight">Next Steps</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Travnex. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
