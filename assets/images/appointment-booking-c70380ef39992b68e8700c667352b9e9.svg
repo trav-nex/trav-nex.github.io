@@ -1,0 +1,153 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="apptGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="apptShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#1e293b" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="280" fill="#f8fafc"/>
+
+  <!-- Calendar Visual -->
+  <g transform="translate(40, 30)">
+    <rect width="260" height="220" rx="14" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#apptShadow)"/>
+
+    <!-- Calendar Header -->
+    <rect x="0" y="0" width="260" height="45" rx="14" fill="url(#apptGrad)"/>
+    <rect x="0" y="30" width="260" height="15" fill="url(#apptGrad)"/>
+    <text x="130" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">March 2026</text>
+
+    <!-- Day Headers -->
+    <g transform="translate(10, 55)">
+      <text x="17" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Sun</text>
+      <text x="51" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Mon</text>
+      <text x="85" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Tue</text>
+      <text x="120" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Wed</text>
+      <text x="154" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Thu</text>
+      <text x="188" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Fri</text>
+      <text x="223" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#64748b">Sat</text>
+    </g>
+
+    <!-- Calendar Days -->
+    <g transform="translate(10, 75)">
+      <!-- Week 1 -->
+      <text x="17" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">1</text>
+      <text x="51" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">2</text>
+      <text x="85" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">3</text>
+      <text x="120" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">4</text>
+      <text x="154" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">5</text>
+      <text x="188" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">6</text>
+      <text x="223" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">7</text>
+
+      <!-- Week 2 - with selected date -->
+      <text x="17" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">8</text>
+      <text x="51" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">9</text>
+      <circle cx="85" cy="36" r="14" fill="#6366f1"/>
+      <text x="85" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">10</text>
+      <text x="120" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">11</text>
+      <text x="154" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">12</text>
+      <text x="188" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">13</text>
+      <text x="223" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">14</text>
+
+      <!-- Week 3 -->
+      <text x="17" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">15</text>
+      <text x="51" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">16</text>
+      <text x="85" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">17</text>
+      <text x="120" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">18</text>
+      <text x="154" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">19</text>
+      <text x="188" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">20</text>
+      <text x="223" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">21</text>
+
+      <!-- Week 4 -->
+      <text x="17" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">22</text>
+      <text x="51" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">23</text>
+      <text x="85" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">24</text>
+      <text x="120" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">25</text>
+      <text x="154" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">26</text>
+      <text x="188" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1e293b">27</text>
+      <text x="223" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">28</text>
+    </g>
+
+    <!-- Time slots indicator -->
+    <rect x="15" y="185" width="230" height="25" rx="6" fill="#eef2ff"/>
+    <text x="130" y="202" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4f46e5">9:00 AM • 10:30 AM • 2:00 PM • 4:30 PM</text>
+  </g>
+
+  <!-- Booking Flow -->
+  <g transform="translate(330, 30)">
+    <rect width="530" height="220" rx="14" fill="white" stroke="#e2e8f0" stroke-width="1" filter="url(#apptShadow)"/>
+
+    <text x="20" y="28" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1e293b">Appointment Booking Flow</text>
+
+    <!-- Flow Steps -->
+    <g transform="translate(20, 50)">
+      <!-- Step 1 -->
+      <rect width="150" height="65" rx="10" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+      <circle cx="20" cy="20" r="12" fill="#22c55e"/>
+      <text x="20" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">1</text>
+      <text x="40" y="18" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Customer Request</text>
+      <text x="40" y="32" font-family="Arial, sans-serif" font-size="8" fill="#64748b">"Book appointment</text>
+      <text x="40" y="44" font-family="Arial, sans-serif" font-size="8" fill="#64748b">for Tuesday"</text>
+      <text x="40" y="58" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">📞 Voice / 💬 Chat</text>
+    </g>
+
+    <text x="185" y="82" font-family="Arial, sans-serif" font-size="16" fill="#cbd5e1">→</text>
+
+    <g transform="translate(200, 50)">
+      <!-- Step 2 -->
+      <rect width="150" height="65" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+      <circle cx="20" cy="20" r="12" fill="#3b82f6"/>
+      <text x="20" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">2</text>
+      <text x="40" y="18" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">AI Checks Availability</text>
+      <text x="40" y="32" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Real-time calendar</text>
+      <text x="40" y="44" font-family="Arial, sans-serif" font-size="8" fill="#64748b">lookup &amp; validation</text>
+      <text x="40" y="58" font-family="Arial, sans-serif" font-size="8" fill="#2563eb">📅 Calendar API</text>
+    </g>
+
+    <text x="365" y="82" font-family="Arial, sans-serif" font-size="16" fill="#cbd5e1">→</text>
+
+    <g transform="translate(380, 50)">
+      <!-- Step 3 -->
+      <rect width="130" height="65" rx="10" fill="#fef3c7" stroke="#fcd34d" stroke-width="1"/>
+      <circle cx="20" cy="20" r="12" fill="#f59e0b"/>
+      <text x="20" y="24" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">3</text>
+      <text x="40" y="18" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Confirmation</text>
+      <text x="40" y="32" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Booking created</text>
+      <text x="40" y="44" font-family="Arial, sans-serif" font-size="8" fill="#64748b">&amp; notifications sent</text>
+      <text x="40" y="58" font-family="Arial, sans-serif" font-size="8" fill="#d97706">📧 Email / 📱 SMS</text>
+    </g>
+
+    <!-- Features Row -->
+    <g transform="translate(20, 135)">
+      <rect width="118" height="55" rx="8" fill="#f8fafc"/>
+      <text x="59" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b">⏰ Reminders</text>
+      <text x="59" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">24h &amp; 1h before</text>
+      <text x="59" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">appointment</text>
+    </g>
+
+    <g transform="translate(148, 135)">
+      <rect width="118" height="55" rx="8" fill="#f8fafc"/>
+      <text x="59" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b">🔄 Rescheduling</text>
+      <text x="59" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Easy changes via</text>
+      <text x="59" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">conversation</text>
+    </g>
+
+    <g transform="translate(276, 135)">
+      <rect width="118" height="55" rx="8" fill="#f8fafc"/>
+      <text x="59" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b">❌ Cancellation</text>
+      <text x="59" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Policy enforcement</text>
+      <text x="59" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">&amp; slot release</text>
+    </g>
+
+    <g transform="translate(404, 135)">
+      <rect width="106" height="55" rx="8" fill="#f8fafc"/>
+      <text x="53" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e293b">📊 Analytics</text>
+      <text x="53" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">No-show rates</text>
+      <text x="53" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#64748b">&amp; trends</text>
+    </g>
+  </g>
+</svg>
